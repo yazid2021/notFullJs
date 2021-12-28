@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="assets/sc.png"> -->
+    <link rel="icon" href="https://2ality.com/2011/10/logo-js/js.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>{notFull}</title>
+    
+</head>
+<body>
+    <header>
+        <h1><span><code class="h1">{notFull}</code></span> BASIC JS</h1>
+        <h1>DEFINITION</h1>
+        <p>I'm create this because often forget the code.</p>
+    </header>
+    <div class="wrapper">
+        <div id="sidebar">
+            <!-- <div class="fixed">    
+            </div> -->
+            <h1>JS Basic</h1>
+            <ul>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#aritmatika">Aritmatika</a></li>
+                <li><a class="active" target="_top" href="#operatorUnary">Operator Unary</a></li>
+                <li><a class="active" target="_top" href="#operatorPerbandingan">Operator Perbandingan</a></li>
+                <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
+                <li><a class="active" target="_top" href="#function">Function</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="js">
+        
+    </div>
+    <main>
+        <div class="javascript">
+            <h2>Apa itu Javascript?</h2>
+            <p>JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT. <a href="https://id.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></p>
+            <p>JavaScript adalah bahasa pemrograman yang paling banyak digunakan dalam pengembangan website, aplikasi, game, dan lainnya. Bahkan, produk dari perusahaan besar seperti Google, Facebook, dan LinkedIn juga telah menggunakan JavaScript. </p> 
+            <p>Jika Anda menguasai JavaScript, Anda bisa membuat website lebih menarik dan membuat pengunjung betah. Bahkan, Anda juga dapat mengembangkan game online berbasis web yang populer di kalangan anak muda.</p>       
+            <p>Seiring perkembangannya, JavaScript tak hanya bisa digunakan di sisi client, tetapi juga di sisi server. Eksekusi bahasa pemrograman ini di sisi server dapat dilakukan dengan memanfaatkan platform framework JavaScript seperti Node.js, React.js, dan lainnya. </p>
+            <p>Langsung saja, yuk simak pembahasannya! <a href="https://www.niagahoster.co.id/blog/javascript-adalah/" target="_blank">Niagahoster</a></p>
+        </div>
+
+        <article id="variabel">
+            <h2>Variabel</h2>
+            <p>Variabel seperti class pada HTML, yakni membuat memori yang nantinya berisi value.</p>
+            <p>Tag HTML bisa dideklarasikan pada <code>document.writeln()</code>, dan untuk syntax seperti tanda dolar <code>$</code> dan kurung kurawal <code>{}</code> yang digabungkan berguna untuk memanggil variabel. Tanpa menggunakan syntax tersebut pun masih bisa memanggil variabel dengan hanya ketik nama deklarasi variabel yang telah dibuat, asalkan tidak menggunakan tanda kode string seperti <code>""</code> dan <code>''</code> kecuali tanda petik seperti ini = <code>``</code></p>
+            <ul>
+                <li><code>var</code> variabel yang sudah tidak direkomendasikan lagi, karena tidak bisa <span class="italic">local scope function</span>, dan bisa direplika pada deklarasi yang sama</li>
+                <li><code>let</code> sama seperti var, let juga bisa direplika, tetapi jenis variabel ini bisa di semua <span class="italic">scope</span>,</li>
+                <li><code>const</code> variabel jenis ini bisa di semua <span class="italic">scope</span> dan sama sekali tidak bisa direplika.</p></li>
+            </ul>
+            <p>Contoh penggunaan variabel sebagai berikut.</p>
+            <script src="https://gist.github.com/yazid2021/bf7fd1396b4d2b425b3092ce96c9a242.js"></script>
+            <!-- <img width="90%" src="assets/variabel_1.png" alt="variabel"> -->
+            <p>Output:</p> 
+            <script>
+                const languageName = "JavaScript";
+                document.writeln(`<code>${languageName}</code><br><br>`);
+            </script>
+            <p>Bisa menambahkan elemen lagi seperti ini: </p>
+            <script src="https://gist.github.com/yazid2021/15711d284ff13d4e6b691787b824d926.js"></script>
+            <script>
+                const osName = "Windows";
+                const developedBy = "Microsoft";
+                document.writeln('<p>Output: </p>');
+                document.writeln(`<p><code><u>Operating System </u> = ${osName} | <u>Developed by </u> = ${developedBy}</code></p>`);
+            </script>
+        </article>
+
+        <article id="aritmatika">
+            <h2>Operator Aritmatika</h2>
+            <p>Operator Aritmatika adalah melakukan operasi perhitungan aritmatika, seperti pertambahan, pengurangan, dsb.</p>
+            <!-- <img width="90%" src="assets/aritmatika.png" alt="aritmatika"> -->
+            <script src="https://gist.github.com/yazid2021/ae14a9fc74fdc3ae4e043457ccca099f.js"></script>
+            <p>Output: </p>
+            <script>
+                let result = 1 + 2;
+                document.writeln(`<code>1 + 2 = ${result} </code></br>`);
+                let originalResult = result;
+
+                result -= 1;
+                document.writeln(`<code>${originalResult} - 1 =  ${result}</code></br>`);
+                originalResult = result;
+
+                result *= 2;
+                document.writeln(`<code>${originalResult} x 2 =  ${result} </code></br>`);
+                originalResult = result;
+
+                result /= 4;
+                document.writeln(`<code>${originalResult} : 4 =  ${result}</code> </br>`);
+                originalResult = result;
+
+                result %= 4;
+                document.writeln(`<code>${originalResult} % 4 =  ${result}</code> </br>`);
+                originalResult = result;
+            </script>
+        </article>
+
+        <article id="operatorUnary">
+            <h2>Operator Unary</h2>
+            <p>Operator Unary adalah operator yang biasanya membutuhkan satu data saja pada tipe data number. Operator Unary memiliki empat operator, diantaranya: </p>
+
+            <h3 class="mt">1. Positive</h3>            
+            <p>Digunakan untuk menandai bahwa tipe data ini positif, dengan mengetik <code>+</code> saja, lihat gambar dibawah.</p>
+            <script>
+                let positiveUnary = +100;
+            </script>
+            <!-- <img src="assets/positive-unary.png" alt="positif unary" width="90%"> -->
+            <script src="https://gist.github.com/yazid2021/5917647fc6a120b48829e36bf393fed7.js"></script>
+            <p>Output: </p>
+            <p><code>100</code></p>
+
+            <h3 class="mt">2. Negative</h3>
+            <p>Digunakan untuk menandai bahwa tipe data ini negatif, dengan mengetik <code>-</code> saja, lihat gambar dibawah.</p>
+            <script>
+                let negativeUnary = -100;
+            </script>
+            <!-- <img width="90%" src="assets/negative.png" alt="negative unary"> -->
+            <script src="https://gist.github.com/yazid2021/0c4f4bc1cb68475ca95bce9fc76e00a9.js"></script>
+            <p>Output: </p>
+            <p><code>-100</code></p>
+
+            <h3 class="mt">3. Increment</h3>
+            <p>Increment adalah jika kita ketik <code>++</code> hasilnya akan bertambah satu seperti gambar dibawah ini.</p>
+            <!-- <img width="90%" src="assets/increment.png" alt="increment"> -->
+            <script src="https://gist.github.com/yazid2021/9cf819c70b1c2ed9f935e8756fe94ced.js"></script>
+            <p>Output: </p>
+            <script>
+                let incrementUnary = 100;
+                incrementUnary++;
+                document.writeln(`<code>${incrementUnary}</code>`);
+            </script>
+            
+            <h3 class="mt">4. Decrement</h3>
+            <p>Increment adalah jika kita ketik <code>--</code> hasilnya akan berkurang satu seperti gambar dibawah ini:</p>
+            <!-- <img width="80%" src="assets/decrement.png" alt="decrement"> -->
+            <script src="https://gist.github.com/yazid2021/aa15c524d9560266175268b49aee5ac5.js"></script>
+            <p>Output: </p>
+            <script>
+                let decrementUnary = 100;
+                decrementUnary--;
+                document.writeln(`<code>${decrementUnary}</code>`);
+            </script>
+        </article>
+        
+        <article id="operatorPerbandingan">
+            <h2>Operator Perbandingan</h2>
+            <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. Operator perbandingan akan menghasilkan sebuah nilai boolean <code>true</code> dan <code>false</code>.</p>
+            <p>Definisi jenis operator perbandingan:</p>            
+                <p><code>> : lebih dari</code></p>
+                <p><code>< : kurang dari</code></p>
+                <p><code> = atau == : sama dengan </code></p>
+                <p><code>!= atau !== : tidak sama dengan </code></p>
+                <script src="https://gist.github.com/yazid2021/f5b3d4e04171f45a4730cf8c868a3460.js"></script>
+                <p>Output: </p>
+                <script>
+                    var firstPerbandingan = 32;
+                    var secondPerbandingan = 33;
+
+                        var hasilPerbandingan = firstPerbandingan > secondPerbandingan;
+                            document.writeln(`<code>${firstPerbandingan} > ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
+
+                        var hasilPerbandingan = firstPerbandingan < secondPerbandingan;
+                            document.writeln(`<code>${firstPerbandingan} < ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
+
+                        var hasilPerbandingan = firstPerbandingan >= secondPerbandingan;
+                            document.writeln(`<code>${firstPerbandingan} >= ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
+
+                        var hasilPerbandingan = firstPerbandingan <= secondPerbandingan;
+                            document.writeln(`<code>${firstPerbandingan} <= ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
+
+                        var hasilPerbandingan = firstPerbandingan != secondPerbandingan;
+                            document.writeln(`<code>${firstPerbandingan} != ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
+                </script>
+        </article>
+        <article id="operatorBitwise">
+            <h2>Operator Bitwise</h2>
+            <p>Operator Bitwise digunakan secara khusus untuk melakukan proses logika, dimana nilai atau operand yang diolah adalah bilangan biner. Bilangan Biner adalah bilangan yang hanya terdiri dari 2 angka yaitu angka 0 dan 1. Jenis-jenis dan simbol operator bitwise: </p>
+                <code>AND = &</code>
+                <code>OR = |</code>
+                <code>XOR = ^</code>
+                <code>NOT = ~</code>
+                <code>Left Shift = <<</code>
+                <code>Right Shift = >></code>
+
+            <h3 class="mt">1. AND</h3>
+            <p><code>AND = &</code> Operand AND adalah mengatur setiap bit ke 1 jika kedua bit sama-sama 1.</p>
+            <script src="https://gist.github.com/yazid2021/9b06c29b2566a14f42c3e548459e8267.js"></script>
+            <p>Output: </p>
+            <script>
+                var firstAnd = 1;
+                var secondAnd = 0;
+        
+                    var hasilAndBitwise = firstAnd & secondAnd;
+                    document.writeln(`<code>1 & 0 = ${hasilAndBitwise}</code><br>`);
+
+                    var hasilAndBitwise = secondAnd & firstAnd;
+                    document.writeln(`<code>0 & 1 = ${hasilAndBitwise}</code><br>`);
+
+                    var hasilAndBitwise = secondAnd & secondAnd;
+                    document.writeln(`<code>0 & 0 = ${hasilAndBitwise}</code><br>`);
+
+                    var hasilAndBitwise = firstAnd & firstAnd;
+                    document.writeln(`<code>1 & 1 = ${hasilAndBitwise}</code><br>`);
+            </script>
+
+            <h3 class="mt">2. OR</h3>
+            <p><code>OR = |</code> Operand OR adalah mengatur setiap bit ke 1 jika salah satu dari dua bit adalah 1.</p>
+            <script src="https://gist.github.com/yazid2021/ba900285be7b3f6f48658292e940cdcd.js"></script>
+            <p>Output: </p>
+            <script>
+                var firstOr = 1;
+                var secondOr = 0;
+
+                    var hasilOrBitwise = firstOr | secondOr;
+                    document.writeln(`<code>1 | 0 = ${hasilOrBitwise}</code><br>`);
+
+                    var hasilOrBitwise = secondOr | secondOr;
+                    document.writeln(`<code>0 | 0 = ${hasilOrBitwise}</code><br>`);
+
+                    var hasilOrBitwise = firstOr | secondOr;
+                    document.writeln(`<code>1 | 0 = ${hasilOrBitwise}</code><br>`);
+
+                    var hasilOrBitwise = firstOr | firstOr;
+                    document.writeln(`<code>1 | 1 = ${hasilOrBitwise}</code><br>`);
+            </script>
+
+            <h3 class="mt">3. XOR</h3>
+            <p><code>XOR = ^</code> Ketika operasi bitwise XOR dilakukan pada sepasang bit, ia mengembalikan 1 jika bit berbeda.</p>
+            <script src="https://gist.github.com/yazid2021/893035b53675d346efa446afc20fc02e.js"></script>
+            <p>Output: </p>
+            <script>
+                var firstXor = 1;
+                var secondXor = 0;
+
+                    var hasilXorBitwise = firstXor ^ secondXor;
+                    document.writeln(`<code>1 ^ 0 = ${hasilXorBitwise}</code><br>`);
+
+                    var hasilXorBitwise = secondXor ^ secondXor;
+                    document.writeln(`<code>0 ^ 0 = ${hasilXorBitwise}</code><br>`);
+
+                    var hasilXorBitwise = firstXor ^ secondXor;
+                    document.writeln(`<code>1 ^ 0 = ${hasilXorBitwise}</code><br>`);
+
+                    var hasilXorBitwise = firstXor ^ firstXor;
+                    document.writeln(`<code>1 ^ 1 = ${hasilXorBitwise}</code><br>`);
+            </script>
+
+            <h3 class="mt">4. NOT</h3>
+            <p><code>NOT = ~</code> Ketika operasi bitwise NOT dilakukan maka akan membalikan kedua nilai yang semula 1 menjadi 0.</p>
+            <script src="https://gist.github.com/yazid2021/2e863b1e948d5ccac74bfac77ff83656.js"></script>
+            <p>Output: </p>            
+            <script>
+                let firstNot = 1001001;
+                    firstNot = 1010110;
+                    ~firstNot;
+                    document.writeln(`<code>${firstNot}</code><br>`);
+            </script>
+        </article>
+
+        <article id="function">
+            <h2>Function</h2>
+            <p>Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain.</p>
+            <p>Fungsi di dalam Javascript adalah sebuah objek, karena memiliki properti dan juga method. Bagi pemula konsep ini cukup membingungkan. <a href="https://www.petanikode.com/javascript-fungsi/" target="_blank">Petani Kode</a></p>
+            <h3>Ada 2 Cara Membuat Fungsi di Javascript</h3>
+            <p>a. Menggunakan cara biasa <br> b. Meggunakan ekspresi <br> c. Menggunakan tanda panah</p>
+            
+            <!-- Deklarasi Fungsi -->
+            <h4 class="mt">A. Membuat Fungsi Dengan Cara Biasa</h4>
+            <p>Cara ini paling sering digunakan, terutama buat yang baru belajar Javascript.</p>
+            <script>
+                function namaFungsi() {
+                   console.log("Ini adalah cara menggunakan fungsi dengan cara yang biasa");}
+            </script>
+            <script src="https://gist.github.com/yazid2021/adfbeeed1f71e15ea54d2c579df5ea0c.js"></script>
+            
+            <h4 class="mt">B. Membuat Fungsi Dengan Ekspresi</h4>
+            <p>Kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.</p>
+            <script>
+                const namaFungsi = function() {
+                console.log("Ini adalah cara menggunakan fungsi dengan ekspresi") };
+            </script>
+            <script src="https://gist.github.com/yazid2021/8c15b300bef62019ec1d614b17876592.js"></script>
+
+            <h4 class="mt">C. Membuat Fungsi Dengan Tanda Panah</h4>
+            <p>Cara ini sering digunakan di kode Javascript masa kini, karena lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi ini mulai muncul pada standar ES6.</p>
+            <p>Contoh: </p>
+            <script>
+                let botolMinum = () => { document.writeln("SanQua") };
+                // botolMinum()
+            </script>
+            <script src="https://gist.github.com/yazid2021/d62bae0a10fbf7b3472a0bc017360a92.js"></script>
+
+            <!-- Memanggil Fungsi -->
+            <h3 class="mt">Cara Memanggil atau Mengeksekusi Fungsi</h3>
+            <p>Setelah mengetahui cara membuat fungsi, lalu bagaimana cara memanggilnya? kita bisa memanggil fungsi di dalam kode Javascript dengan menuliskan nama fungsinya seperti ini:</p>
+            <p><code>namaFungsi()</code></p>
+            <p>Contoh: </p>
+            <script src="https://gist.github.com/yazid2021/27717989fe4e1309d0e59abf7a5cb370.js"></script>
+            <p>Output: </p>
+            <script>
+                // membuat fungsi
+                function namaFungsi() {
+                    document.writeln("<code>Hello World!</code>");
+                }
+
+                // memanggil fungsi
+                namaFungsi(); // maka akan menghasilkan -> Hello World!
+            </script>
+            
+
+            <p>Selain dengan cara di atas, kita juga bisa memanggil fungsi melalui atribut event pada HTML.</p>
+            <script src="https://gist.github.com/yazid2021/495c934c768c6559434fee57b9f367e3.js"></script>
+            <p>Hasilnya: </p>
+            <img style="cursor:grab; border-radius: 5px;" width="100%" src="assets/alert.png" alt="Eksekusi function di HTML">
+            
+            <!-- Fungsi dalam parameter -->
+            <h3 class="mt">Function Dengan Parameter</h3>
+            <p>Parameter adalah variabel yang menyimpan nilai untuk diproses di dalam fungsi.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/6b2804b36c5d543abc5432186c2af3ce.js"></script>
+            <p>Output:</p>
+            <script>
+                function duba(a, b) {
+                    let ujungDuba = a * b;
+                    document.writeln(`<code>${ujungDuba}</code>`);
+                }
+
+                duba(3, 2);
+            </script>
+            <p>Pada contoh di atas, <code>a</code> dan <code>b</code> adalah sebuah parameter.</p>
+            <p>Kita memberikan <code>3</code> untuk parameter <code>a</code> dan <code>2</code> untuk parameter <code>b</code>.</p>
+            
+            <!-- return function -->
+            <h3 class="mt">Function Yang Mengembalikan Nilai</h3>
+            <p>Agar hasil pengolahan nilai di dalam function dapat digunakan untuk proses berikutnya, maka fungsi harus mengembalikan nilai.</p>
+            <p>Pengembalian nilai pada function menggunakan kata kunci <code>return</code> kemudian diikuti dengan nilai atau variabel yang akan dikembalikan. </p>
+            <p>Contoh:</p>
+            <p><span class="italic">return</span> dengan 2 parameter</p>
+            <!-- return with 2 parameters -->
+            <script src="https://gist.github.com/yazid2021/c14d922ecb712ebad3dfa2d7cfffa171.js"></script>
+            <p>Output: </p>
+            <script>
+                function perkalian(a,b) {
+                let hasilPerkalian = a * b;
+                return hasilPerkalian;
+                }
+
+                let perkalian1 = 10;
+                let perkalian2 = 23;
+                let hasil = perkalian(perkalian1,perkalian2); // hasilnya 230
+                document.writeln(`<code>${hasil}</code>`);
+            </script>
+            <p><span class="italic">return</span> dengan 1 parameter (lebih simpel)</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/bc9371393e85aa7bfa3f3193512e6576.js"></script>
+            <p>Output:</p>
+            <!-- return with 1 parameter simplest -->
+            <script>
+                function pertambahan(num) {
+                    return num + 83;
+                }
+                document.writeln(`<code>${pertambahan(10)}</code>`);
+            </script>
+        </article>
+        
+    <!-- scroll-to-top -->
+    <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"5px","buttonDToBottom":"32px","buttonDToRight":"15px","selectedBackgroundColor":"#000000","selectedIconColor":"#ffffff","buttonWidth":"40px","buttonHeight":"40px","svgWidth":"32px","svgHeight":"32px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
+</body>
+</html>
