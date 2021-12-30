@@ -28,7 +28,7 @@
                 <li><a class="active" target="_top" href="#operatorPerbandingan">Operator Perbandingan</a></li>
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#array">Array</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
@@ -49,11 +49,11 @@
     <main>
         <div class="javascript">
             <h2>Apa itu Javascript?</h2>
-            <p>JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT. <a href="https://id.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></p>
+            <p>JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT. <a class="web" href="https://id.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></p>
             <p>JavaScript adalah bahasa pemrograman yang paling banyak digunakan dalam pengembangan website, aplikasi, game, dan lainnya. Bahkan, produk dari perusahaan besar seperti Google, Facebook, dan LinkedIn juga telah menggunakan JavaScript. </p> 
             <p>Jika Anda menguasai JavaScript, Anda bisa membuat website lebih menarik dan membuat pengunjung betah. Bahkan, Anda juga dapat mengembangkan game online berbasis web yang populer di kalangan anak muda.</p>       
             <p>Seiring perkembangannya, JavaScript tak hanya bisa digunakan di sisi client, tetapi juga di sisi server. Eksekusi bahasa pemrograman ini di sisi server dapat dilakukan dengan memanfaatkan platform framework JavaScript seperti Node.js, React.js, dan lainnya. </p>
-            <p>Langsung saja, yuk simak pembahasannya! <a href="https://www.niagahoster.co.id/blog/javascript-adalah/" target="_blank">Niagahoster</a></p>
+            <p>Langsung saja, yuk simak pembahasannya! <a class="web" href="https://www.niagahoster.co.id/blog/javascript-adalah/" target="_blank">Niagahoster</a></p>
         </div>
 
         <article id="variabel">
@@ -277,7 +277,7 @@
         <article id="function">
             <h2>Function</h2>
             <p>Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain.</p>
-            <p>Fungsi di dalam Javascript adalah sebuah objek, karena memiliki properti dan juga method. Bagi pemula konsep ini cukup membingungkan. <a href="https://www.petanikode.com/javascript-fungsi/" target="_blank">Petani Kode</a></p>
+            <p>Fungsi di dalam Javascript adalah sebuah objek, karena memiliki properti dan juga method. Bagi pemula konsep ini cukup membingungkan. <a class="web" href="https://www.petanikode.com/javascript-fungsi/" target="_blank">Petani Kode</a></p>
             <h3>Ada 2 Cara Membuat Fungsi di Javascript</h3>
             <p>a. Menggunakan cara biasa <br> b. Meggunakan ekspresi <br> c. Menggunakan tanda panah</p>
             
@@ -291,7 +291,7 @@
             <script src="https://gist.github.com/yazid2021/adfbeeed1f71e15ea54d2c579df5ea0c.js"></script>
             
             <h4 class="mt">B. Membuat Fungsi Dengan Ekspresi</h4>
-            <p>Kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.</p>
+            <p>Kita menggunakan <a class="miring" href="#variabel">variabel</a>, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.</p>
             <script>
                 const namaFungsi = function() {
                 console.log("Ini adalah cara menggunakan fungsi dengan ekspresi") };
@@ -332,7 +332,7 @@
             
             <!-- Fungsi dalam parameter -->
             <h3 class="mt">Function Dengan Parameter</h3>
-            <p>Parameter adalah variabel yang menyimpan nilai untuk diproses di dalam fungsi.</p>
+            <p>Parameter adalah <a class="miring" href="#variabel">variabel</a> yang menyimpan nilai untuk diproses di dalam fungsi.</p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/6b2804b36c5d543abc5432186c2af3ce.js"></script>
             <p>Output:</p>
@@ -350,7 +350,7 @@
             <!-- return function -->
             <h3 class="mt">Function Yang Mengembalikan Nilai</h3>
             <p>Agar hasil pengolahan nilai di dalam function dapat digunakan untuk proses berikutnya, maka fungsi harus mengembalikan nilai.</p>
-            <p>Pengembalian nilai pada function menggunakan kata kunci <code>return</code> kemudian diikuti dengan nilai atau variabel yang akan dikembalikan. </p>
+            <p>Pengembalian nilai pada function menggunakan kata kunci <code>return</code> kemudian diikuti dengan nilai atau <a class="miring" href="#variabel">variabel</a> yang akan dikembalikan. </p>
             <p>Contoh:</p>
             <p><span class="italic">return</span> dengan 2 parameter</p>
             <!-- return with 2 parameters -->
@@ -380,6 +380,160 @@
             </script>
         </article>
         
+        <article id="array">
+            <h2>Array</h2>
+            <p><code>[]</code> Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat. Setiap data di dalam array memiliki indeks, sehingga kita mudah memprosesnya.</p>
+            <p>Setiap data dalam Array memiliki indeks, sehingga kita akan mudah memprosesnya. Indeks dalam array dimulai dari angka <code>[0]</code>.</p>
+            <p>Dapat disimpulkan bahwa Array dapat menggantikan variabel yang menampung banyak value, daripada membuat variabel dengan banyak deklarasi dan value itu akan memakan waktu lama, tidak efisien, dan memakan memori terlalu banyak.</p>
+            <p>Contoh Array:</p>
+            <script src="https://gist.github.com/yazid2021/3de859b5b2cc2535329e127c07e1a9be.js"></script>
+            <p>Output:</p>
+            <script>
+                const myArray = ['cokelat',' stroberi',' melon'];
+                document.writeln(`<code>${myArray}</code>`);
+            </script>
+            <p>Kita bisa menggunakan tanda <code>,</code> untuk menambahkan value tipe data di dalam <span class="italic">bracket</span> yang sama. Oh iya karena Javascript merupakan pemrograman yang dynamic typing, maka kita bisa mencmpuri semua tipe data dalam Array:</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/15829b2c73c06136029cf2e9ebdeebec.js"></script>
+            <p>Output:</p>
+            <script>
+                const tipeData = ['Laptop have', 1, true];
+                document.writeln(`<code>${tipeData}</code>`)
+            </script>
+
+            <!-- Index data array -->
+            <h3 class="mt">Cara Mengambil/Mengindex Data Pada Array</h3>
+            <p>Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Perlu diingati indeks array selalu dimulai dari angka nol <code>[0]</code>.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/5a0bb161b1559219300eebc1ceb42b60.js"></script>
+            <p>Output: </p>
+            <script>
+                const contohKata = 'Duba';
+                const hasilIndeks = contohKata[1];
+                document.writeln(`<code>${hasilIndeks}</code>`);
+            </script>
+
+            <!-- Array Method -->
+            <h3 class="mt">Menggunakan Array Method</h3>
+            <p>Di javascript sudah disediakan build-in function(method) untuk mengelola data pada array.</p>
+            <p>Dibawah ini adalah kisi-kisi method array javascript:</p>
+            <!-- Isinya -->
+            <h4 class="mt">1. Slice</h4>
+            <p>Method Array.slice() digunakan untuk ’memotong’ array menjadi array baru, atau menjadi ’sub-array’ dari array asal. Method <code>slice()</code> ini membutuhkan 2 buah argumen yang berisi posisi index awal dan akhir pemotongan. </p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/31c71efdb58044d3baeaa4e24298cded.js"></script>
+            <p>Output:</p>
+            <script>
+                const arraySlice = ["CPU"," Mouse"," Laptop"," Monitor"," Keyboard"," PSU"," VGA"];
+                const hasilArraySlice = arraySlice.slice(3,5);
+                document.writeln(`<code>${hasilArraySlice}</code>`);
+            </script>
+
+            <h4 class="mt">2. Push</h4>
+            <p>Method Array.push() digunakan untuk menambahkan elemen/value pada akhir array.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/3200e58563132a66aeb72e639895e02c.js"></script>
+            <p>Output:</p>
+            <script>
+                const arrayPush = ['Brandon',' Beckett',];
+                arrayPush.push(' Miller');
+                document.writeln(`<code>${arrayPush}</code>`);
+            </script>
+
+            <h4 class="mt">3. Pop</h4>
+            <p>Method Array.pop() adalah menghapus elemen terakhir dari array.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/d89afbf2aea746968e72f6544402daef.js"></script>
+            <p>Output:</p>
+            <script>
+                const arrayPop = [0,1,2,3,4];
+                arrayPop.pop();
+                document.writeln(`<code>${arrayPop}</code>`);
+            </script>
+
+            <h4 class="mt">4. Shift</h4>
+            <p>Method Array.shift() adalah menghapus elemen paling awal dari array.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/556648938e6924c21a18597d35dd95cf.js"></script>
+            <p>Output:</p>
+            <script>
+                const arrayShift = ['TV',' AC',' Kulkas',' Printer'];
+                arrayShift.shift();
+                document.writeln(`<code>${arrayShift}</code>`);
+            </script>
+
+            <h4 class="mt">5. Unshift</h4>
+            <p>Method Array.unshift() adalah menambahkan elemen paling awal dari array.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/5bebfabf834736c88c9deb40e1548d36.js"></script>
+            <p>Output:</p>
+            <script>
+                const arrayUnshift = [" Google"," Microsoft"," Facebook"];
+                arrayUnshift.unshift("Amazon");
+                document.writeln(`<code>${arrayUnshift}</code>`);
+            </script>
+
+            <h4 class="mt">6. Join</h4>
+            <p>Method Array.join() adalah menggabungkan elemen array menjadi sebuah string, Array.join() harus ditempatkan pada output javascript seperti <code>document.writeln()</code> atau <code>console.log()</code></p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/aaf3e43b0f9b07aa294acf6503d127fa.js"></script>
+            <p>Output:</p>
+            <script>
+                const arrayJoin = ["Mangan","Adus","Turu","Ngoding"];
+                document.writeln(`<code>${arrayJoin.join("-")}</code>`);
+            </script>
+
+            <h4 class="mt">8. Sort</h4>
+            <p>Method Array.sort() digunakan untuk mengurutkan elemen pada array baik ascending maupun descending atau lebih dikenal dengan dari kecil ke besar dan dari besar ke kecil.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/74e022a8752c0d4c71d5435badb94fdb.js"></script>
+            <p>Output:</p>
+            <script>
+                const arraySort = [7,12,4,6,10,20,45,2,1];
+                arraySort.sort();
+                document.writeln(`<code>${arraySort}</code>`);
+            </script>
+            <p>Lihat, hasilnya tak sesuai yang diperkirakan karena 2 lebih besar daripada 1, jadi hasilnya tak berurutan. Kita bisa memanfaatkan <a class="miring" href="#function">function</a> agar lebih berurutan seperti gambar dibawah ini. </p>
+            <!-- Ascending -->
+            <h5>Pengurutan ke ascending (dari terkecil ke terbesar):</h5>
+            <!-- tipe data number -->
+            <script src="https://gist.github.com/yazid2021/906f29bfad11b6c3ad8ced9431c46512.js"></script>
+            <p>Output:</p>
+            <script>
+                const arraySortAscendingNum = [7,12,4,6,10,20,45,2,1];
+                arraySortAscendingNum.sort(function arraySortAscendingNum(a,b) {return a > b});
+                document.writeln(`<code>${arraySortAscendingNum}</code>`);
+            </script>
+            <br>
+            <br>
+            <!-- tipe data string -->
+            <script src="https://gist.github.com/yazid2021/d9644bec426d36f7c2a08045e826147d.js"></script>
+            <script>
+                let arraySortAscendingStr = ["d","f","z","w","a","t"];
+                arraySortAscendingStr.sort(function arraySortAscendingStr(a,b) {return a > b});
+                document.writeln(`<code>${arraySortAscendingStr}</code>`);
+            </script>
+            <!-- Descending -->
+            <h5 class="mt">Pengurutan ke Descending (dari terbesar ke terkecil):</h5>
+            <!-- tipe data number -->
+            <script src="https://gist.github.com/yazid2021/82219c97e1e07e7042e050865205e898.js"></script>
+            <p>Output:</p>
+            <script>
+                const arraySortDescendingNum = [7,12,4,6,10,20,45,2,1];
+                arraySortDescendingNum.sort(function arraySortAscendingNum(a,b) {return a < b});
+                document.writeln(`<code>${arraySortDescendingNum}</code>`);
+            </script>
+            <br>
+            <br>
+            <!-- tipe data string -->
+            <script src="https://gist.github.com/yazid2021/da73ff4e3c5ba41f162ce5ccaec48447.js"></script>
+            <p>Output:</p>
+            <script>
+                const arraySortDescendingStr = ["d","f","z","w","a","t"];
+                arraySortDescendingStr.sort(function arraySortAscendingStr(a,b) {return a < b});
+                document.writeln(`<code>${arraySortDescendingStr}</code>`);
+            </script>
+        </article>
     <!-- scroll-to-top -->
     <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"5px","buttonDToBottom":"32px","buttonDToRight":"15px","selectedBackgroundColor":"#000000","selectedIconColor":"#ffffff","buttonWidth":"40px","buttonHeight":"40px","svgWidth":"32px","svgHeight":"32px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
 </body>

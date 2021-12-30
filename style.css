@@ -29,7 +29,7 @@ body {
     border: 1px solid;
     /* text-align: justify; */
     line-height: 25px;
-    font-size: 18px;
+    font-size: 17.5px;
     /* box-shadow: 10px 10px 0px 0px rgb(255, 255, 255); */
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -141,6 +141,16 @@ a {
     border: none;
     text-align: left;
     color: inherit;
+}
+
+.web {
+    color: #4a24e2;
+}
+
+.miring {
+    color: #f14545;
+    text-decoration: none;
+    /* font-style: italic; */
 }
 
 #sidebar a:hover {
