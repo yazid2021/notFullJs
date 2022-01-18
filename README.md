@@ -1,4 +1,4 @@
 # {notFull}.js
-Cuma iseng bikin basic js walaupun masih copas 😥
+Cuma iseng bikin dokumentasi basic js walaupun masih copas 😥
 
 belum responsif.
