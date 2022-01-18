@@ -29,7 +29,7 @@
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
                 <li><a class="active" target="_top" href="#array">Array</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
+                <li><a class="active" target="_top" href="#looping">Looping</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
@@ -59,11 +59,11 @@
         <article id="variabel">
             <h2>Variabel</h2>
             <p>Variabel seperti class pada HTML, yakni membuat memori yang nantinya berisi value.</p>
-            <p>Tag HTML bisa dideklarasikan pada <code>document.writeln()</code>, dan untuk syntax seperti tanda dolar <code>$</code> dan kurung kurawal <code>{}</code> yang digabungkan berguna untuk memanggil variabel. Tanpa menggunakan syntax tersebut pun masih bisa memanggil variabel dengan hanya ketik nama deklarasi variabel yang telah dibuat, asalkan tidak menggunakan tanda kode string seperti <code>""</code> dan <code>''</code> kecuali tanda petik seperti ini = <code>``</code></p>
+            <p>Tag HTML bisa dideklarasikan pada <span class="green">document.writeln()</span>, dan untuk syntax seperti tanda dolar <span class="green">$</span> dan kurung kurawal <span class="green">{}</span> yang digabungkan berguna untuk memanggil variabel. Tanpa menggunakan syntax tersebut pun masih bisa memanggil variabel dengan hanya ketik nama deklarasi variabel yang telah dibuat, asalkan tidak menggunakan tanda kode string seperti <span class="green">""</span> dan <span class="green">''</span> kecuali tanda petik seperti ini <span class="green">``</span</p>
             <ul>
-                <li><code>var</code> variabel yang sudah tidak direkomendasikan lagi, karena tidak bisa <span class="italic">local scope function</span>, dan bisa direplika pada deklarasi yang sama</li>
-                <li><code>let</code> sama seperti var, let juga bisa direplika, tetapi jenis variabel ini bisa di semua <span class="italic">scope</span>,</li>
-                <li><code>const</code> variabel jenis ini bisa di semua <span class="italic">scope</span> dan sama sekali tidak bisa direplika.</p></li>
+                <li><span class="green">var</span> variabel yang sudah tidak direkomendasikan lagi, karena tidak bisa <em>local scope function</em>, dan bisa direplika pada deklarasi yang sama</li>
+                <li><span class="green">let</span> sama seperti var, let juga bisa direplika, tetapi jenis variabel ini bisa di semua <em>scope</em>,</li>
+                <li><span class="green">const</span> variabel jenis ini bisa di semua <em>scope</em> dan sama sekali tidak bisa direplika.</p></li>
             </ul>
             <p>Contoh penggunaan variabel sebagai berikut.</p>
             <script src="https://gist.github.com/yazid2021/bf7fd1396b4d2b425b3092ce96c9a242.js"></script>
@@ -117,7 +117,7 @@
             <p>Operator Unary adalah operator yang biasanya membutuhkan satu data saja pada tipe data number. Operator Unary memiliki empat operator, diantaranya: </p>
 
             <h3 class="mt">1. Positive</h3>            
-            <p>Digunakan untuk menandai bahwa tipe data ini positif, dengan mengetik <code>+</code> saja, lihat gambar dibawah.</p>
+            <p>Digunakan untuk menandai bahwa tipe data ini positif, dengan mengetik <span class="green">+</span> saja, lihat gambar dibawah.</p>
             <script>
                 let positiveUnary = +100;
             </script>
@@ -127,7 +127,7 @@
             <p><code>100</code></p>
 
             <h3 class="mt">2. Negative</h3>
-            <p>Digunakan untuk menandai bahwa tipe data ini negatif, dengan mengetik <code>-</code> saja, lihat gambar dibawah.</p>
+            <p>Digunakan untuk menandai bahwa tipe data ini negatif, dengan mengetik <span class="green">-</span> saja, lihat gambar dibawah.</p>
             <script>
                 let negativeUnary = -100;
             </script>
@@ -137,7 +137,7 @@
             <p><code>-100</code></p>
 
             <h3 class="mt">3. Increment</h3>
-            <p>Increment adalah jika kita ketik <code>++</code> hasilnya akan bertambah satu seperti gambar dibawah ini.</p>
+            <p>Increment adalah jika kita ketik <span class="green">++</span> hasilnya akan bertambah satu seperti gambar dibawah ini.</p>
             <!-- <img width="90%" src="assets/increment.png" alt="increment"> -->
             <script src="https://gist.github.com/yazid2021/9cf819c70b1c2ed9f935e8756fe94ced.js"></script>
             <p>Output: </p>
@@ -148,7 +148,7 @@
             </script>
             
             <h3 class="mt">4. Decrement</h3>
-            <p>Increment adalah jika kita ketik <code>--</code> hasilnya akan berkurang satu seperti gambar dibawah ini:</p>
+            <p>Increment adalah jika kita ketik <span class="green">--</span> hasilnya akan berkurang satu seperti gambar dibawah ini:</p>
             <!-- <img width="80%" src="assets/decrement.png" alt="decrement"> -->
             <script src="https://gist.github.com/yazid2021/aa15c524d9560266175268b49aee5ac5.js"></script>
             <p>Output: </p>
@@ -161,12 +161,12 @@
         
         <article id="operatorPerbandingan">
             <h2>Operator Perbandingan</h2>
-            <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. Operator perbandingan akan menghasilkan sebuah nilai boolean <code>true</code> dan <code>false</code>.</p>
+            <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. Operator perbandingan akan menghasilkan sebuah nilai boolean <span class="green">true</span> dan <span class="green">false</span>.</p>
             <p>Definisi jenis operator perbandingan:</p>            
-                <p><code>> : lebih dari</code></p>
-                <p><code>< : kurang dari</code></p>
-                <p><code> = atau == : sama dengan </code></p>
-                <p><code>!= atau !== : tidak sama dengan </code></p>
+                <p><span class="green">></span> : lebih dari</p>
+                <p><span class="green"><</span> : kurang dari</p>
+                <p><span class="green">=</span> atau <span class="green">==</span> : sama dengan</p>
+                <p><span class="green">!=</span> atau <span class="green">!==</span> : tidak sama dengan</p>
                 <script src="https://gist.github.com/yazid2021/f5b3d4e04171f45a4730cf8c868a3460.js"></script>
                 <p>Output: </p>
                 <script>
@@ -189,18 +189,20 @@
                             document.writeln(`<code>${firstPerbandingan} != ${secondPerbandingan} = ${hasilPerbandingan}</code></br>`);
                 </script>
         </article>
+        
         <article id="operatorBitwise">
             <h2>Operator Bitwise</h2>
             <p>Operator Bitwise digunakan secara khusus untuk melakukan proses logika, dimana nilai atau operand yang diolah adalah bilangan biner. Bilangan Biner adalah bilangan yang hanya terdiri dari 2 angka yaitu angka 0 dan 1. Jenis-jenis dan simbol operator bitwise: </p>
-                <code>AND = &</code>
-                <code>OR = |</code>
-                <code>XOR = ^</code>
-                <code>NOT = ~</code>
-                <code>Left Shift = <<</code>
-                <code>Right Shift = >></code>
+            <!-- <p>AND = <span class="green">&</span> OR = <span class="green">|</span> XOR = <span class="green">^</span></p> -->
+            <div class="flex">
+                <p>AND = <span class="green">&</span></p><br>
+                <p>OR = <span class="green">|</span></p><br>
+                <p>XOR = <span class="green">^</span></p>
+                <p>NOT = <span class="green">~</span></p>
+            </div>
 
             <h3 class="mt">1. AND</h3>
-            <p><code>AND = &</code> Operand AND adalah mengatur setiap bit ke 1 jika kedua bit sama-sama 1.</p>
+            <p>Operand AND adalah mengatur setiap bit ke 1 jika kedua bit sama-sama 1.</p>
             <script src="https://gist.github.com/yazid2021/9b06c29b2566a14f42c3e548459e8267.js"></script>
             <p>Output: </p>
             <script>
@@ -221,7 +223,7 @@
             </script>
 
             <h3 class="mt">2. OR</h3>
-            <p><code>OR = |</code> Operand OR adalah mengatur setiap bit ke 1 jika salah satu dari dua bit adalah 1.</p>
+            <p>Operand OR adalah mengatur setiap bit ke 1 jika salah satu dari dua bit adalah 1.</p>
             <script src="https://gist.github.com/yazid2021/ba900285be7b3f6f48658292e940cdcd.js"></script>
             <p>Output: </p>
             <script>
@@ -242,7 +244,7 @@
             </script>
 
             <h3 class="mt">3. XOR</h3>
-            <p><code>XOR = ^</code> Ketika operasi bitwise XOR dilakukan pada sepasang bit, ia mengembalikan 1 jika bit berbeda.</p>
+            <p>Ketika operasi bitwise XOR dilakukan pada sepasang bit, ia mengembalikan 1 jika bit berbeda.</p>
             <script src="https://gist.github.com/yazid2021/893035b53675d346efa446afc20fc02e.js"></script>
             <p>Output: </p>
             <script>
@@ -263,7 +265,7 @@
             </script>
 
             <h3 class="mt">4. NOT</h3>
-            <p><code>NOT = ~</code> Ketika operasi bitwise NOT dilakukan maka akan membalikan kedua nilai yang semula 1 menjadi 0.</p>
+            <p>Ketika operasi bitwise NOT dilakukan maka akan membalikan kedua nilai yang semula 1 menjadi 0.</p>
             <script src="https://gist.github.com/yazid2021/2e863b1e948d5ccac74bfac77ff83656.js"></script>
             <p>Output: </p>            
             <script>
@@ -310,7 +312,7 @@
             <!-- Memanggil Fungsi -->
             <h3 class="mt">Cara Memanggil atau Mengeksekusi Fungsi</h3>
             <p>Setelah mengetahui cara membuat fungsi, lalu bagaimana cara memanggilnya? kita bisa memanggil fungsi di dalam kode Javascript dengan menuliskan nama fungsinya seperti ini:</p>
-            <p><code>namaFungsi()</code></p>
+            <p><span class="green">namaFungsi()</span></p>
             <p>Contoh: </p>
             <script src="https://gist.github.com/yazid2021/27717989fe4e1309d0e59abf7a5cb370.js"></script>
             <p>Output: </p>
@@ -324,8 +326,7 @@
                 namaFungsi(); // maka akan menghasilkan -> Hello World!
             </script>
             
-
-            <p>Selain dengan cara di atas, kita juga bisa memanggil fungsi melalui atribut event pada HTML.</p>
+            <p class="mt">Selain dengan cara di atas, kita juga bisa memanggil fungsi melalui atribut event pada HTML.</p>
             <script src="https://gist.github.com/yazid2021/495c934c768c6559434fee57b9f367e3.js"></script>
             <p>Hasilnya: </p>
             <img style="cursor:grab; border-radius: 5px;" width="100%" src="assets/alert.png" alt="Eksekusi function di HTML">
@@ -344,15 +345,15 @@
 
                 duba(3, 2);
             </script>
-            <p>Pada contoh di atas, <code>a</code> dan <code>b</code> adalah sebuah parameter.</p>
-            <p>Kita memberikan <code>3</code> untuk parameter <code>a</code> dan <code>2</code> untuk parameter <code>b</code>.</p>
+            <p>Pada contoh di atas, <span class="green">a</span> dan <span class="green">b</span> adalah sebuah parameter.</p>
+            <p>Kita memberikan <span class="green">3</span> untuk parameter <span class="green">a</span> dan <span class="green">2</span> untuk parameter <span class="green">b</span>.</p>
             
             <!-- return function -->
             <h3 class="mt">Function Yang Mengembalikan Nilai</h3>
             <p>Agar hasil pengolahan nilai di dalam function dapat digunakan untuk proses berikutnya, maka fungsi harus mengembalikan nilai.</p>
-            <p>Pengembalian nilai pada function menggunakan kata kunci <code>return</code> kemudian diikuti dengan nilai atau <a class="miring" href="#variabel">variabel</a> yang akan dikembalikan. </p>
+            <p>Pengembalian nilai pada function menggunakan kata kunci <span class="green">return</span> kemudian diikuti dengan nilai atau <a class="miring" href="#variabel">variabel</a> yang akan dikembalikan. </p>
             <p>Contoh:</p>
-            <p><span class="italic">return</span> dengan 2 parameter</p>
+            <p><span class="green">return</span> dengan 2 parameter</p>
             <!-- return with 2 parameters -->
             <script src="https://gist.github.com/yazid2021/c14d922ecb712ebad3dfa2d7cfffa171.js"></script>
             <p>Output: </p>
@@ -367,7 +368,7 @@
                 let hasil = perkalian(perkalian1,perkalian2); // hasilnya 230
                 document.writeln(`<code>${hasil}</code>`);
             </script>
-            <p><span class="italic">return</span> dengan 1 parameter (lebih simpel)</p>
+            <p><span class="green">return</span> dengan 1 parameter (lebih simpel)</p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/bc9371393e85aa7bfa3f3193512e6576.js"></script>
             <p>Output:</p>
@@ -382,8 +383,8 @@
         
         <article id="array">
             <h2>Array</h2>
-            <p><code>[]</code> Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat. Setiap data di dalam array memiliki indeks, sehingga kita mudah memprosesnya.</p>
-            <p>Setiap data dalam Array memiliki indeks, sehingga kita akan mudah memprosesnya. Indeks dalam array dimulai dari angka <code>[0]</code>.</p>
+            <p><span class="green">[]</span> Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat. Setiap data di dalam array memiliki indeks, sehingga kita mudah memprosesnya.</p>
+            <p>Setiap data dalam Array memiliki indeks, sehingga kita akan mudah memprosesnya. Indeks dalam array dimulai dari angka <span class="green">[0]</span>.</p>
             <p>Dapat disimpulkan bahwa Array dapat menggantikan variabel yang menampung banyak value, daripada membuat variabel dengan banyak deklarasi dan value itu akan memakan waktu lama, tidak efisien, dan memakan memori terlalu banyak.</p>
             <p>Contoh Array:</p>
             <script src="https://gist.github.com/yazid2021/3de859b5b2cc2535329e127c07e1a9be.js"></script>
@@ -392,7 +393,7 @@
                 const myArray = ['cokelat',' stroberi',' melon'];
                 document.writeln(`<code>${myArray}</code>`);
             </script>
-            <p>Kita bisa menggunakan tanda <code>,</code> untuk menambahkan value tipe data di dalam <span class="italic">bracket</span> yang sama. Oh iya karena Javascript merupakan pemrograman yang dynamic typing, maka kita bisa mencmpuri semua tipe data dalam Array:</p>
+            <p>Kita bisa menggunakan tanda <span class="green">,</span> untuk menambahkan value tipe data di dalam <span class="italic">bracket</span> yang sama. Oh iya karena Javascript merupakan pemrograman yang dynamic typing, maka kita bisa mencmpuri semua tipe data dalam Array:</p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/15829b2c73c06136029cf2e9ebdeebec.js"></script>
             <p>Output:</p>
@@ -403,7 +404,7 @@
 
             <!-- Index data array -->
             <h3 class="mt">Cara Mengambil/Mengindex Data Pada Array</h3>
-            <p>Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Perlu diingati indeks array selalu dimulai dari angka nol <code>[0]</code>.</p>
+            <p>Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Perlu diingati indeks array selalu dimulai dari angka nol <span class="green">[0]</span>.</p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/5a0bb161b1559219300eebc1ceb42b60.js"></script>
             <p>Output: </p>
@@ -419,7 +420,7 @@
             <p>Dibawah ini adalah kisi-kisi method array javascript:</p>
             <!-- Isinya -->
             <h4 class="mt">1. Slice</h4>
-            <p>Method Array.slice() digunakan untuk ’memotong’ array menjadi array baru, atau menjadi ’sub-array’ dari array asal. Method <code>slice()</code> ini membutuhkan 2 buah argumen yang berisi posisi index awal dan akhir pemotongan. </p>
+            <p>Method Array.slice() digunakan untuk ’memotong’ array menjadi array baru, atau menjadi ’sub-array’ dari array asal. Method <span class="green">slice()</span> ini membutuhkan 2 buah argumen yang berisi posisi index awal dan akhir pemotongan. </p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/31c71efdb58044d3baeaa4e24298cded.js"></script>
             <p>Output:</p>
@@ -474,7 +475,7 @@
             </script>
 
             <h4 class="mt">6. Join</h4>
-            <p>Method Array.join() adalah menggabungkan elemen array menjadi sebuah string, Array.join() harus ditempatkan pada output javascript seperti <code>document.writeln()</code> atau <code>console.log()</code></p>
+            <p>Method Array.join() adalah menggabungkan elemen array menjadi sebuah string, Array.join() harus ditempatkan pada output javascript seperti <span class="green">document.writeln()</span> atau <span class="green">console.log()</span></p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/aaf3e43b0f9b07aa294acf6503d127fa.js"></script>
             <p>Output:</p>
@@ -533,6 +534,71 @@
                 arraySortDescendingStr.sort(function arraySortAscendingStr(a,b) {return a < b});
                 document.writeln(`<code>${arraySortDescendingStr}</code>`);
             </script>
+        </article>
+
+        <!-- Looping -->
+        <article id="looping">
+            <h2>Perulangan atau Looping</h2>
+            <p>Syarat bahasa pemrograman adalah mampu menangani proses-proses secara dinamis, termasuk pada loop atau perulang pada javascript bertujuan untuk mengulangi instruksi hingga pada kondisi tertentu terpenuhi maka perulangan berhenti.</p>
+            <p>Sebagai contoh kita ingin menampilkan angka 1 sampai 100, betapa melelahkan jika kita harus mengetik manual angka 1 sampai 100. Disinilah perulangan dapat mempersingkat waktu penulisan angka-angka tersebut. <a class="web" href="https://bahasaweb.com/belajar-loop-atau-perulangan-pada-javascript/">Bahasaweb</a></p>
+            <p>Secara umum ada 5 jenis perulangan namun dibagi menjadi 2 bagian yaitu, <span class="italic">Counted Loop</span> dan <span class="italic">Uncounted Loop</span>:</p>
+            <p>Apa perbedaannya?</p>
+            <ul>
+                <li><strong>Counted Loop</strong> merupakan perulangan yang jelas dan sudah tentu banyak perulangannya. Yang termasuk <strong>Counted Loop</strong>:</li>
+                <ol>
+                    <li>Perulangan For</li>
+                    <li>Perulangan forEach</li>
+                    <li>Perulangan Repeat</li>
+                </ol>
+                <li><strong>Uncounted Loop</strong> merupakan perulangan yang tidak jelas berapa kali ia harus mengulang. Yang termasuk <strong>Uncounted Loop</strong>:</li>
+                    <ol>
+                        <li>Perulangan While</li>
+                        <li>Perulangan Do While</li>
+                    </ol>                        
+            </ul>
+            <h3 id="countedLoop" class="mt">- Counted Loop</h3>
+
+           <!-- For -->
+            <h4 id="for">1. For</h4>
+            <p>Perulangan for merupakan perulangan yang termasuk dalam counted loop, karena sudah jelas berapa kali ia akan mengulang.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/ccefc7d67c9c4fcc319445e5f526fb70.js"></script>
+            <p>Output:</p>
+            <script>
+                for(let i = 0; i < 3; i++){
+                    document.write(`<p><code>Perulangan ke- ${i} </code></p>`)
+                }
+            </script>
+            <p class="mt">Kondisi ini akan menentukan:</p>
+            <ul>
+                <li>Hitungan akan dimulai dari <span class="green">0 (i = 0);</span></li>
+                <li>Hitungannya sampai berapa? Sampai <span class="green">i < 10;</span></li>
+                <li>Lalu di setiap perulangan <span class="green">i</span> akan bertambah <span class="green">+1 (i++)</span>.</li>
+            </ul>
+            <p class="mt">Variabel <span class="green">i</span> pada perulangan <a href="#for" class="miring">for</a> berfungsi untuk menyimpan nilai hitungan.</p>
+            <p>Jadi setiap perulangan dilakukan nilai <span class="green">i</span> akan selalu bertambah satu. Karena kita menentukannya di bagian <span class="green">i++</span>.</p>            
+            <p class="mt">Bagaimana kalau perulangannya ingin dimulai dari angka yang terbesar dulu baru terkecil?</p>
+            <p>Variabel di dalam <a href="#for" class="miring">for</a> tidak harus selalu <span class="green">i</span> bebas mengisikannya.</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/45f6bbdeea4784c5abf8baafc7020bed.js"></script>
+            <p>Output:</p>
+            <script>
+                for( let hitungMundur = 5; hitungMundur > 0; hitungMundur--) {
+                    document.writeln(`<p><code>Perulangan ke ${hitungMundur}</code></p>`);
+                }
+            </script>
+            <p class="mt">Mengapa tidak sampai nol (0)?</p>
+            <p>Karena kondisi yang kita berikan <span class="green">hitungMundur > 0</span>. Apabila <span class="green">hitungMundur</span> bernilai 0, maka kondisi ini akan menjadi <span class="green">false</span>.</p>
+            <p>Kecuali kita menggunakan operator lebih besar sama dengan <span class="green">(>=)</span>, maka jika <span class="green">hitungMundur</span> bernilai 0, kondisi akan menjadi <span class="green">true</span>.</p>
+
+            <!-- forEach -->
+           <h4 id="forEach" class="mt">2. forEach</h4>
+           <p>Perulangan <a href="#forEach" class="miring">forEach</a> biasanya digunakan untuk mencetak item di dalam array.</p>
+           <p>Perulangan ini termasuk dalam perulangan counted loop, karena jumlah perulangannya akan dituentukan oleh panjang dari array.</p>
+           <p>Ada dua cara menggunakan perulangan <a class="miring" href="#forEach">foreach</a> di Javascript:</p>
+           <ol>
+               <li>Menggunakan <a class="miring" href="#for">for</a> dengan operator <span class="green">in</span>;</li>
+           </ol>
         </article>
     <!-- scroll-to-top -->
     <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"5px","buttonDToBottom":"32px","buttonDToRight":"15px","selectedBackgroundColor":"#000000","selectedIconColor":"#ffffff","buttonWidth":"40px","buttonHeight":"40px","svgWidth":"32px","svgHeight":"32px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>

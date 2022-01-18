@@ -143,14 +143,16 @@ a {
     color: inherit;
 }
 
-.web {
+a.web {
     color: #4a24e2;
 }
 
 .miring {
-    color: #f14545;
+    color: #865439;
     text-decoration: none;
     /* font-style: italic; */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #sidebar a:hover {
@@ -163,6 +165,22 @@ a {
 
 span {
     font-family: JetBrains Mono NL;
+    font-weight: bold;
+}
+
+span.green {
+    /* color: #ff0062; */
+    color: #ec5454;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex p {
+    padding: 0 10px;
 }
 
 .javascript {
@@ -216,6 +234,12 @@ code {
     background: linear-gradient(to right, #414345, #232526);
 
 
+}
+
+ol {
+    margin: 2% 40% 2% 5%;
+    text-align: justify;
+    padding: 10px;
 }
 
 .italic {
