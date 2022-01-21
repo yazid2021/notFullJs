@@ -8,12 +8,20 @@
     <link rel="icon" href="https://2ality.com/2011/10/logo-js/js.jpg">
     <link rel="stylesheet" href="style.css">
     <title>{notFull}</title>
-    
+
+    <script>
+        const author = {
+            Name    :   "Much Yazid",
+            Address :   "Indonesia",
+            Age     :   18
+        }
+    </script>
+
 </head>
 <body>
     <header>
         <h1><span><code class="h1">{notFull}</code></span> BASIC JS</h1>
-        <h1>DEFINITION</h1>
+        <h1>DOCUMENTATION</h1>
         <p>I'm create this because often forget the code.</p>
     </header>
     <div class="wrapper">
@@ -29,9 +37,9 @@
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
                 <li><a class="active" target="_top" href="#array">Array</a></li>
+                <li><a class="active" target="_top" href="#object">Object</a></li>
+                <li><a class="active" target="_top" href="#percabangan">Percabangan</a></li>
                 <li><a class="active" target="_top" href="#looping">Looping</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
@@ -279,6 +287,7 @@
         <article id="function">
             <h2>Function</h2>
             <p>Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain.</p>
+            <p>Bisa diibaratkan kamu membuat kue, namun kue itu ingin dihidangkan pada saat malam hari walaupun kamu membuatnya pagi-pagi buta. Function pada javascript ini juga sama kasusnya seperti kue tadi, kamu membuat program yang terencana lalu mengeksekusinya sesuka hati dimanapun dan kapanpun.</p>
             <p>Fungsi di dalam Javascript adalah sebuah objek, karena memiliki properti dan juga method. Bagi pemula konsep ini cukup membingungkan. <a class="web" href="https://www.petanikode.com/javascript-fungsi/" target="_blank">Petani Kode</a></p>
             <h3>Ada 2 Cara Membuat Fungsi di Javascript</h3>
             <p>a. Menggunakan cara biasa <br> b. Meggunakan ekspresi <br> c. Menggunakan tanda panah</p>
@@ -416,8 +425,8 @@
 
             <!-- Array Method -->
             <h3 class="mt">Menggunakan Array Method</h3>
-            <p>Di javascript sudah disediakan build-in function(method) untuk mengelola data pada array.</p>
-            <p>Dibawah ini adalah kisi-kisi method array javascript:</p>
+            <p>Di javascript sudah disediakan build-in function(method) untuk mengelola data pada array. <a class="web" href="https://www.matawebsite.com/blog/memahami-array-method-pada-javascript">Matawebsite</a></p>
+            <p>Method pada Array adalah suatu kode indeks yang memudahkan pengguna mengelola data pada Array agar lebih kompleks dan terstruktur. Dibawah ini adalah kisi-kisi method array javascript:</p>
             <!-- Isinya -->
             <h4 class="mt">1. Slice</h4>
             <p>Method Array.slice() digunakan untuk ’memotong’ array menjadi array baru, atau menjadi ’sub-array’ dari array asal. Method <span class="green">slice()</span> ini membutuhkan 2 buah argumen yang berisi posisi index awal dan akhir pemotongan. </p>
@@ -536,11 +545,71 @@
             </script>
         </article>
 
+        <!-- Object -->
+        <article class="mt" id="object">
+            <h2>Object</h2>
+            <p>Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index berupa tipe data lain selain number, misalnya string.</p>
+            <p>Fitur ini biasanya disebut <span class="italic">Associative String</span>, tetapi di Javascript tidak didukung. Oleh karena itu, kita bisa memanfaatkan tipe data object. <a href="https://www.youtube.com/watch?v=SDROba_M42g" class="web">Programmer Zaman Now</a></p>
+            <ul>
+                <li>Tipe data object adalah tipe data yang mirip dengan tipe data <a href="#array" class="miring">Array</a>.</li>
+                <li>Yang membedakan adalah index pada tipe data object adalah bisa menggunakan string</li>
+                <li>Index di object biasanya disebut <span class="italic">attributes</span>, bukan index.</li>
+            </ul>
+            <p>Tipe data object berisi data yang banyak dalam <a href="#variabel" class="miring">Variabel</a> sama halnya dengan <a href="#array" class="miring">Array</a>, akan tetapi object lebih kompleks dan lebih bersifat bebas mengekspresikannya. Perbedaan simbolnya ialah Array = <span class="green">[]</span>, dan Object = <span class="green">{}</span></p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/409b1a57da04a7604e9a7d2d78b701ab.js"></script>
+            <p>Sc untuk output objectnya:</p>
+            <script src="https://gist.github.com/yazid2021/05d7d64628d2eb793e8601ebf0aefbc4.js"></script>
+            <p>Output:</p>
+            <script>
+                let identitas = {
+                    Nama : "Budi",
+                    Umur : 24,
+                    Alamat : "Bandung"
+                };
+
+                document.writeln(`<code>Nama = ${identitas.Nama}<br>Umur = ${identitas.Umur}<br> Alamat = ${identitas.Alamat}</code>`);
+            </script>
+            <p class="mt">Perlu diketahui untuk mengambil data dari variabel identitas menggunakan <span class="green">.</span> pada kata setelah variabelnya, contoh <span class="green">identitas.Nama</span> maka menghasilkan <span class="green">Budi</span>.</p>
+        </article>
+
+        <!-- Percabangan -->
+        <article id="percabangan">
+            <h2>Percabangan</h2>
+            <p>Apa itu percabangan?, dan kenapa disebut percabangan?</p>
+            <p>Percabangan sama halnya dengan <span class="italic">algoritme</span> dan <span class="italic">flowchart</span>. Percabangan akan mampu membuat program berpikir dan menentukan tindakan sesuai dengan logika/kondisi yang kita berikan.</p>
+            <p>Contoh flowchart sama persis apa yang dilakukan percabangan:</p>
+            <figure>
+                <img class="gambar" src="https://img.carapedia.com/images/article/flowchart.jpg" alt="flowchart">
+                <figcaption>Sumber : <a href="https://carapedia.com/flowchart_benar_info747.html" class="web">Contoh Flowchart Yang Benar</a></figcaption>
+            </figure>
+            <p>Pada pemrograman Javascript, terdapat <b>6 bentuk percabangan</b> yang harus kita kitahui. <a href="https://www.petanikode.com/javascript-percabangan/" class="web">Petani Kode</a></p>
+
+            <!-- Percabangan IF -->
+            <h3 class="mt">1. Percabangan if</h3>
+            <p>Percabangan if merupakan percabangan yang hanya memiliki <b>satu blok pilihan</b> saat kondisi bernilai benar atau <span class="green">true</span>.</p>
+            <p>Disini saya akan memberikan contoh sebuah nilai ulangan:</p>
+            <p>Contoh:</p>
+            <script src="https://gist.github.com/yazid2021/a1383ab58c1f3bed7ceb951df5a3c459.js"></script>
+            <p>Output:</p>
+            <script>
+                const nilaiUjian = 80;
+                    if(nilaiUjian > 75) {
+                        document.write("<p><code>Selamat anda mendapatkan nilai <b>A</b></code></p>")
+                    }
+            </script>
+
+            <!-- <h3>Percabangan If Else</h3>
+            <p>Dalam javascript, <span class="green">if</span> adalah salah satu kunci yang digunakan untuk percabangan. Percabangan artinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi.</p>
+            <p>Hampir semua bahasa pemrograman mendukung <span class="italic">if expression/if else</span>.</p> -->
+        </article>
+
         <!-- Looping -->
         <article id="looping">
             <h2>Perulangan atau Looping</h2>
             <p>Syarat bahasa pemrograman adalah mampu menangani proses-proses secara dinamis, termasuk pada loop atau perulang pada javascript bertujuan untuk mengulangi instruksi hingga pada kondisi tertentu terpenuhi maka perulangan berhenti.</p>
             <p>Sebagai contoh kita ingin menampilkan angka 1 sampai 100, betapa melelahkan jika kita harus mengetik manual angka 1 sampai 100. Disinilah perulangan dapat mempersingkat waktu penulisan angka-angka tersebut. <a class="web" href="https://bahasaweb.com/belajar-loop-atau-perulangan-pada-javascript/">Bahasaweb</a></p>
+            <p>Misalnya juga anda masih sekolah dan anda terkena hukuman karena terlambat masuk kelas, lalu guru anda memberikan hukuman dengan menulis "saya berjanji tidak akan mengulanginya lagi" sebanyak 100 kali, pasti capek dan membuat tangan anda pegal, kecuali kalo memang situ hobi menulis. Nah, di javascript ini ada yang namanya <span class="italic">Perulangan</span></p>
             <p>Secara umum ada 5 jenis perulangan namun dibagi menjadi 2 bagian yaitu, <span class="italic">Counted Loop</span> dan <span class="italic">Uncounted Loop</span>:</p>
             <p>Apa perbedaannya?</p>
             <ul>
@@ -556,7 +625,7 @@
                         <li>Perulangan Do While</li>
                     </ol>                        
             </ul>
-            <h3 id="countedLoop" class="mt">- Counted Loop</h3>
+            <h3 id="countedLoop" class="mt">- Perulangan yang berjenis Counted Loop:</h3>
 
            <!-- For -->
             <h4 id="for">1. For</h4>
@@ -595,10 +664,11 @@
            <h4 id="forEach" class="mt">2. forEach</h4>
            <p>Perulangan <a href="#forEach" class="miring">forEach</a> biasanya digunakan untuk mencetak item di dalam array.</p>
            <p>Perulangan ini termasuk dalam perulangan counted loop, karena jumlah perulangannya akan dituentukan oleh panjang dari array.</p>
-           <p>Ada dua cara menggunakan perulangan <a class="miring" href="#forEach">foreach</a> di Javascript:</p>
+           <p>Ada dua cara menggunakan perulangan <a class="miring" href="#forEach">forEach</a> di Javascript:</p>
            <ol>
                <li>Menggunakan <a class="miring" href="#for">for</a> dengan operator <span class="green">in</span>;</li>
            </ol>
+           <p></p>
         </article>
     <!-- scroll-to-top -->
     <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"5px","buttonDToBottom":"32px","buttonDToRight":"15px","selectedBackgroundColor":"#000000","selectedIconColor":"#ffffff","buttonWidth":"40px","buttonHeight":"40px","svgWidth":"32px","svgHeight":"32px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
