@@ -516,16 +516,9 @@
             </script>
             <br>
             <br>
-            <!-- tipe data string -->
-            <script src="https://gist.github.com/yazid2021/d9644bec426d36f7c2a08045e826147d.js"></script>
-            <script>
-                let arraySortAscendingStr = ["d","f","z","w","a","t"];
-                arraySortAscendingStr.sort(function arraySortAscendingStr(a,b) {return a > b});
-                document.writeln(`<code>${arraySortAscendingStr}</code>`);
-            </script>
             <!-- Descending -->
-            <h5 class="mt">Pengurutan ke Descending (dari terbesar ke terkecil):</h5>
-            <!-- tipe data number -->
+            <h5>Pengurutan ke Descending (dari terbesar ke terkecil):</h5>
+            <!-- array dengan tipe data number -->
             <script src="https://gist.github.com/yazid2021/82219c97e1e07e7042e050865205e898.js"></script>
             <p>Output:</p>
             <script>
@@ -533,20 +526,11 @@
                 arraySortDescendingNum.sort(function arraySortAscendingNum(a,b) {return a < b});
                 document.writeln(`<code>${arraySortDescendingNum}</code>`);
             </script>
-            <br>
-            <br>
-            <!-- tipe data string -->
-            <script src="https://gist.github.com/yazid2021/da73ff4e3c5ba41f162ce5ccaec48447.js"></script>
-            <p>Output:</p>
-            <script>
-                const arraySortDescendingStr = ["d","f","z","w","a","t"];
-                arraySortDescendingStr.sort(function arraySortAscendingStr(a,b) {return a < b});
-                document.writeln(`<code>${arraySortDescendingStr}</code>`);
-            </script>
+            <p>Pada pengurutan <span class="italic">Ascending</span> maupun <span class="italic">Descending</span> kita memanfaatkan sebuah <a href="#function" class="miring">function</a> agar bisa menjalankan operasi perbandingan pada parameter di dalam <a href="#function" class="miring">function</a>.</p>
         </article>
 
         <!-- Object -->
-        <article class="mt" id="object">
+        <article id="object">
             <h2>Object</h2>
             <p>Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index berupa tipe data lain selain number, misalnya string.</p>
             <p>Fitur ini biasanya disebut <span class="italic">Associative String</span>, tetapi di Javascript tidak didukung. Oleh karena itu, kita bisa memanfaatkan tipe data object. <a href="https://www.youtube.com/watch?v=SDROba_M42g" class="web">Programmer Zaman Now</a></p>
@@ -587,7 +571,7 @@
 
             <!-- Percabangan IF -->
             <h3 class="mt">1. Percabangan if</h3>
-            <p>Percabangan if merupakan percabangan yang hanya memiliki <b>satu blok pilihan</b> saat kondisi bernilai benar atau <span class="green">true</span>.</p>
+            <p>Percabangan if merupakan percabangan yang hanya memiliki <b>satu blok pilihan</b> saat kondisi bernilai benar atau <span class="italic">true</span>.</p>
             <p>Disini saya akan memberikan contoh sebuah nilai ulangan:</p>
             <p>Contoh:</p>
             <script src="https://gist.github.com/yazid2021/a1383ab58c1f3bed7ceb951df5a3c459.js"></script>
@@ -598,6 +582,8 @@
                         document.write("<p><code>Selamat anda mendapatkan nilai <b>A</b></code></p>")
                     }
             </script>
+            <p>Perlu diperhatikan, pada kode <span class="green">if(nilaiUjian > 75)</span> apakah benar jika <span class="green">nilaiUjian</span> lebih besar dari 75?, jika jawabannya benar maka akan menghasilkan <span class="green">true</span>.</p>
+            <p>Bisa disimpulkan bahwa <span class="green">if</span> itu benar atau <span class="italic">true</span>, sedangkan <span class="green">else</span> itu salah atau <span class="italic">false</span>.</p>
 
             <!-- <h3>Percabangan If Else</h3>
             <p>Dalam javascript, <span class="green">if</span> adalah salah satu kunci yang digunakan untuk percabangan. Percabangan artinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi.</p>
@@ -613,13 +599,13 @@
             <p>Secara umum ada 5 jenis perulangan namun dibagi menjadi 2 bagian yaitu, <span class="italic">Counted Loop</span> dan <span class="italic">Uncounted Loop</span>:</p>
             <p>Apa perbedaannya?</p>
             <ul>
-                <li><strong>Counted Loop</strong> merupakan perulangan yang jelas dan sudah tentu banyak perulangannya. Yang termasuk <strong>Counted Loop</strong>:</li>
+                <li><strong>Counted Loop</strong> merupakan perulangan yang jelas dan sudah tentu banyak perulangannya. Yang termasuk Counted Loop:</li>
                 <ol>
                     <li>Perulangan For</li>
                     <li>Perulangan forEach</li>
                     <li>Perulangan Repeat</li>
                 </ol>
-                <li><strong>Uncounted Loop</strong> merupakan perulangan yang tidak jelas berapa kali ia harus mengulang. Yang termasuk <strong>Uncounted Loop</strong>:</li>
+                <li><strong>Uncounted Loop</strong> merupakan perulangan yang tidak jelas berapa kali ia harus mengulang. Yang termasuk Uncounted Loop:</li>
                     <ol>
                         <li>Perulangan While</li>
                         <li>Perulangan Do While</li>
@@ -663,12 +649,34 @@
             <!-- forEach -->
            <h4 id="forEach" class="mt">2. forEach</h4>
            <p>Perulangan <a href="#forEach" class="miring">forEach</a> biasanya digunakan untuk mencetak item di dalam array.</p>
-           <p>Perulangan ini termasuk dalam perulangan counted loop, karena jumlah perulangannya akan dituentukan oleh panjang dari array.</p>
+           <p>Perulangan ini termasuk dalam perulangan counted loop, karena jumlah perulangannya akan ditentukan oleh panjang dari array.</p>
            <p>Ada dua cara menggunakan perulangan <a class="miring" href="#forEach">forEach</a> di Javascript:</p>
            <ol>
-               <li>Menggunakan <a class="miring" href="#for">for</a> dengan operator <span class="green">in</span>;</li>
+               <li>Menggunakan <a class="miring" href="#for">for</a> dengan operator <span class="green">in</span>,</li>
+               <li>Menggunakan method <span class="green">forEach</span>.</li>
            </ol>
-           <p></p>
+           <!-- <p>Contoh:</p> -->
+           <p>Operator <span class="green">in</span> adalah seperti penggabungan atau mengambil data dari variabel yang bernilai <span class="green">true</span> untuk menyederhanakan kode</p>
+           <p>Berikut ini bentuk perulangan <span class="green">forEach</span> menggunakan operator <span class="green">in</span>:</p>
+           <p>Contoh:</p>
+           <script src="https://gist.github.com/yazid2021/61f2bf12ae180f6e7a362eb986ebe6bd.js"></script>
+           <p>Output:</p>
+           <script>
+               const emitenBank = ["BBCA","BBRI","BRIS","BBNI"];
+               for(let i in emitenBank) {
+                   document.write(`<code>${emitenBank[i]}</code>`);
+               }
+           </script>
+           <p class="mt">Selanjutnya ialah menggunakan method <span class="green">forEach()</span> dari <a href="#array" class="miring">Array</a>.</p>
+           <p>Contoh:</p>
+           <script src="https://gist.github.com/yazid2021/ddbb33859873de8922f21d7e0433e984.js"></script>
+           <p>Output:</p>
+           <script>
+               const mahasiswa = ['Udin','Asep','Ucup','Bambang'];
+               mahasiswa.forEach(function(a,b) {
+                   document.writeln("<p><code>Mahasiswa nomer urut - " + (b+1) + " adalah " + a + "</code></p>");
+               })
+           </script>
         </article>
     <!-- scroll-to-top -->
     <script> configObj = {"buttonD":"M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z","buttonT":"translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)","shadowSize":"none","roundnessSize":"5px","buttonDToBottom":"32px","buttonDToRight":"15px","selectedBackgroundColor":"#000000","selectedIconColor":"#ffffff","buttonWidth":"40px","buttonHeight":"40px","svgWidth":"32px","svgHeight":"32px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>

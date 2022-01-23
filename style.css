@@ -78,11 +78,14 @@ header h1 {
     top: 0;
     left: 0;
     bottom: 0;
+    overflow: hidden;
     overflow-y: scroll;
     width: 225px;
     height: 92%;
     margin-top: 25px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     margin-left: 20px;
     /* padding: 15px; */
     transition: all 0.5s ease;
@@ -180,8 +183,8 @@ span.green {
 
 #sidebar a:hover {
     /* color: white; */
-    /* background: linear-gradient(to right, #c9d6ff, #e2e2e2); */ /* biru muda */
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(to right, #c9d6ffc7, #e2e2e28c); /* biru muda */
+    /* background: linear-gradient(to right, #e0eafc, #cfdef3); */
     /* background: linear-gradient(to right, #dae2f800, #d6a4a4); */ /* putih ungu */
     /* width: 94%; */
     /* width: auto; */
