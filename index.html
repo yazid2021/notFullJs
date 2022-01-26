@@ -603,7 +603,7 @@
                 <ol>
                     <li>Perulangan For</li>
                     <li>Perulangan forEach</li>
-                    <li>Perulangan Repeat</li>
+                    <!-- <li>Perulangan Repeat</li> -->
                 </ol>
                 <li><strong>Uncounted Loop</strong> merupakan perulangan yang tidak jelas berapa kali ia harus mengulang. Yang termasuk Uncounted Loop:</li>
                     <ol>
@@ -676,6 +676,50 @@
                mahasiswa.forEach(function(a,b) {
                    document.writeln("<p><code>Mahasiswa nomer urut - " + (b+1) + " adalah " + a + "</code></p>");
                })
+           </script>
+
+            <!-- Uncounted Loop -->
+
+            <h3 id="uncountedLoop" class="mt">- Uncounted Loop</h3>
+
+           <!-- While -->
+           <h4 id="while">1. While</h4>
+           <p>While adalah perulangan yang <span class="italic">Uncounted Loop</span>.</p>
+           <p>While bisa menjadi <span class="italic">Counted Loop</span> jika kita memberikan counter di dalamnya. Berbeda dengan perulangan <a class="miring" href="#for">for</a> yang bisa memberikan <a class="miring" href="#variabel">variabel</a> didalam perulangan itu sendiri, while ini harus deklarasi <a class="miring" href="#variabel">variabel</a> diluar dari perulangan, karena memang itulah definisi dari <span class="italic">Uncounted Loop</span>.</p>
+           <p>Contoh:</p>
+           <script src="https://gist.github.com/yazid2021/804ecadaa406c1726f43e2e83388f34a.js"></script>
+           <p>Output:</p>
+           <script>
+                let taxi = 1; // bikin variabelnya
+                let jmlTaxi = 5;
+                while(taxi <= jmlTaxi) { // atur operatornya apakah taxi(1) lebih kecil dari jmlTaxi(10)
+                    document.write('<p><code>taksi nomor ' + taxi + " beroperasi dengan baik</code></p>"); // atur output
+                    taxi++; // setiap akhir dari semua aksi looping kita wajib memberikan increment(++) agar looping bisa berjalan mulus
+                };
+           </script>
+           <!-- <script>
+               let mobilDiLuar = 1;
+               let mobilDiDalam = 5;
+                while(mobilDiLuar <= mobilDiDalam) {
+                    document.write("<p>Looping test</p>");
+                    mobilDiLuar++
+                }
+           </script> -->
+
+           <!-- do/while -->
+           <h4 class="mt" id="doWhile">2. Do/While</h4>
+           <p>Perulangan do/while adalah perulangan yang diibaratkan seperti jalankan mesin terlebih dahulu, setelah dijalankan baru dicek apakah mesinnya bagus atau tidak.</p>
+           <p>do/while sama seperti perulangan <a class="miring" href="#while">while</a>, bedanya adalah sistemnya yaitu do/while dijalankan dulu atau outpunya terlebih dahulu baru kemudian dicek perulangannya.</p>
+           <p>Contoh:</p>
+               <script src="https://gist.github.com/yazid2021/ebc0378154fe96ca6894420fa8400df9.js"></script>
+           <p>Output:</p>
+           <script>
+               let i = 1;
+               do {
+                   document.write(`<p><code>Contoh perulangan do/while ke ${i}</code></p>`);
+                   i++
+               }
+               while(i <= 3);
            </script>
         </article>
     <!-- scroll-to-top -->
