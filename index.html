@@ -35,13 +35,13 @@
                 <li><a class="active" target="_top" href="#operatorUnary">Operator Unary</a></li>
                 <li><a class="active" target="_top" href="#operatorPerbandingan">Operator Perbandingan</a></li>
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
+                <li><a class="active" target="_top" href="#konversi"><span class="green">Konversi Number-String</span></a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
                 <li><a class="active" target="_top" href="#array">Array</a></li>
                 <li><a class="active" target="_top" href="#object">Object</a></li>
+                <li><a class="active" target="_top" href="#introspeksi"><span class="green">Introspeksi</span></a></li>
                 <li><a class="active" target="_top" href="#percabangan">Percabangan</a></li>
                 <li><a class="active" target="_top" href="#looping">Looping</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
-                <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
                 <li><a class="active" target="_top" href="#variabel">Variabel</a></li>
@@ -171,10 +171,33 @@
             <h2>Operator Perbandingan</h2>
             <p>Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. Operator perbandingan akan menghasilkan sebuah nilai boolean <span class="green">true</span> dan <span class="green">false</span>.</p>
             <p>Definisi jenis operator perbandingan:</p>            
-                <p><span class="green">></span> : lebih dari</p>
+                <!-- <p><span class="green">></span> : lebih dari</p>
                 <p><span class="green"><</span> : kurang dari</p>
                 <p><span class="green">=</span> atau <span class="green">==</span> : sama dengan</p>
-                <p><span class="green">!=</span> atau <span class="green">!==</span> : tidak sama dengan</p>
+                <p><span class="green">!=</span> atau <span class="green">!==</span> : tidak sama dengan</p> -->
+                <table border="1">
+                    <tr>
+                        <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Simbol</th>
+                        <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">></td>
+                        <td style="padding: 10px; font-size: 15px; text-align: center;">Lebih dari</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;"><</td>
+                        <td style="padding: 10px; font-size: 15px; text-align: center;">Kurang dari</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">=</td>
+                        <td style="padding: 10px; font-size: 15px; text-align: center;">Sama dengan</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">!=</td>
+                        <td style="padding: 10px; font-size: 15px; text-align: center;"> Tidak sama dengan</td>
+                    </tr>
+                </table>
+                <br>
                 <script src="https://gist.github.com/yazid2021/f5b3d4e04171f45a4730cf8c868a3460.js"></script>
                 <p>Output: </p>
                 <script>
@@ -202,12 +225,35 @@
             <h2>Operator Bitwise</h2>
             <p>Operator Bitwise digunakan secara khusus untuk melakukan proses logika, dimana nilai atau operand yang diolah adalah bilangan biner. Bilangan Biner adalah bilangan yang hanya terdiri dari 2 angka yaitu angka 0 dan 1. Jenis-jenis dan simbol operator bitwise: </p>
             <!-- <p>AND = <span class="green">&</span> OR = <span class="green">|</span> XOR = <span class="green">^</span></p> -->
-            <div class="flex">
+            <!-- <div class="flex">
                 <p>AND = <span class="green">&</span></p><br>
                 <p>OR = <span class="green">|</span></p><br>
                 <p>XOR = <span class="green">^</span></p>
                 <p>NOT = <span class="green">~</span></p>
-            </div>
+            </div>-->
+
+            <table border="1">
+                <tr>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Jenis-jenis</th>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Simbol</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-size: 15px; text-align: center;">AND</td>
+                    <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">&</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-size: 15px; text-align: center;">OR</td>
+                    <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">|</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-size: 15px; text-align: center;">XOR</td>
+                    <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">^</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-size: 15px; text-align: center;">NOT</td>
+                    <td style="padding: 10px; font-size: 17px; color: #ec5454; text-align: center; font-weight: bolder;">~</td>
+                </tr>
+            </table>
 
             <h3 class="mt">1. AND</h3>
             <p>Operand AND adalah mengatur setiap bit ke 1 jika kedua bit sama-sama 1.</p>
@@ -282,6 +328,39 @@
                     ~firstNot;
                     document.writeln(`<code>${firstNot}</code><br>`);
             </script>
+        </article>
+
+        <article class="art" id="konversi">
+            <h2>Konversi String dan Number</h2>
+            <p><a class="web" target="_blank" href="https://educhannel.id/blog/artikel/konversi-tipe-data-dalam-javascript.html">Educhannel</a>. Dalam membuat sebuah aplikasi adakalanya kita harus mengkonversi suatu tipe data menjadi tipe data lainnya, sebagai contoh kita harus mengkonversi data dari string ke number. Dalam pengelolaan aritmatika pada javascript suatu tipe data akan secara otomastis dikonversi sesuai operator yang digunakan. Tipe data string akan terkonversi menjadi number jika dikenakan dengan operasi pembagian, perkalian dan pengurangan dengan tipe data operator number, sendangkan untuk operasi penjumlahan javascript tidak dapat melakukan konversi secara otomasi.</p>
+            <ul>
+                <li>Saat membuat aplikasi, kadang kita input dari pengguna selalu dalam bentuk String</li>
+                <li>Sedangkan kita ingin mengelola datanya dalam bentuk Number</li>
+                <li>Maka sangat disarankan melakukan konversi tipe data. <a target="_blank" href="https://www.youtube.com/watch?v=SDROba_M42g&list=PLjoDWPNz4tIafEtGQ7us_jPz7TaF2wicX" class="web">Programmer Zaman Now</a></li>
+            </ul>
+            <p>Jenis-jenis konversi tipe data pada javascript sebagai berikut:</p>
+            <table border="1">
+                <tr>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Sintaks</th>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Keterangan</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; border-bottom: 1px; padding: 10px; font-size: 15px; color: #ec5454; font-weight: 600; font-family: monospace;">parseInt(string)</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari String ke Number (bilangan bulat)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">parseFloat(string)</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari String ke Number (bilangan pecahan)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">Number(string)</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari String ke Number (bilangan pecahan atau bilangan bulat)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">number.toString()</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari Number ke String</td>
+                </tr>
+            </table>
         </article>
 
         <article class="art" id="function">
@@ -533,7 +612,7 @@
         <article class="art" id="object">
             <h2>Object</h2>
             <p>Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index berupa tipe data lain selain number, misalnya string.</p>
-            <p>Fitur ini biasanya disebut <span class="italic">Associative String</span>, tetapi di Javascript tidak didukung. Oleh karena itu, kita bisa memanfaatkan tipe data object. <a href="https://www.youtube.com/watch?v=SDROba_M42g" class="web">Programmer Zaman Now</a></p>
+            <p>Fitur ini biasanya disebut <span class="italic">Associative String</span>, tetapi di Javascript tidak didukung. Oleh karena itu, kita bisa memanfaatkan tipe data object. <a target="_blank" href="https://www.youtube.com/watch?v=SDROba_M42g" class="web">Programmer Zaman Now</a></p>
             <ul>
                 <li>Tipe data object adalah tipe data yang mirip dengan tipe data <a href="#array" class="miring">Array</a>.</li>
                 <li>Yang membedakan adalah index pada tipe data object adalah bisa menggunakan string</li>
@@ -557,6 +636,44 @@
             <p class="mt">Perlu diketahui untuk mengambil data dari variabel identitas menggunakan <span class="green">.</span> pada kata setelah variabelnya, contoh <span class="green">identitas.Nama</span> maka menghasilkan <span class="green">Budi</span>.</p>
         </article>
 
+        <!-- Introspeksi -->
+        <article class="art" id="introspeksi">
+            <h2>Introspeksi</h2>
+            <p>Introspeksi adalah proses pengecekan sebuah objek yang kita lakukan ketika kita ingin mengetahui apa tipe data sebuah <a href="#object" class="miring">object</a> dan apa saja <a href="#variabel" class="miring">variabel</a> dan <a href="#function" class="miring">function</a> yang ada di dalamnya. <a href="https://masputih.com/2013/01/ebook-gratis-mengenal-javascript" class="web" target="_blank">Masputih</a></p>
+            <p>JavaScript memiliki tiga <span class="italic">built-in function </span> untuk melakukan introspeksi yaitu:</p>
+            <ul>
+                <li><span class="green">typeof</span> : Operator yang bisa kita gunakan untuk melihat tipe data dari sebuah value atau variabel.</li>
+                <li><span class="green">instanceof</span> : Untuk mengecek apakah sebuah data merupakan instance (objek) dari sebuah kelas</li>
+                <li><span class="green">hasOwnProperty</span> : Untuk mengecek apakah sebuah objek memiliki properti (key), akan dikembalikan bertipe <span class="italic">boolean</span></li>
+            </ul>
+            <p>Contoh dari <span class="green">typeof</span>: </p>
+            <!-- gist -->
+            <script src="https://gist.github.com/yazid2021/fda5acc2b2d61c7e47577dcfeae57985.js"></script>
+            <p>Output:</p>
+            <script>
+                let a = 1;
+                let b = "satu";
+                let c = true;
+                let d = {
+                    nama : "Udin",
+                    kelas : 10
+                };
+                let e = function() {};
+
+                console.log(typeof a); // number
+                console.log(typeof b); // string
+                console.log(typeof c); // boolean
+                console.log(typeof d); // object
+                console.log(typeof e); // function
+
+                document.writeln('<p><code>' + typeof a + '</code></p>');
+            </script>
+            <p>Contoh dari <span class="green">instanceof</span> :</p>
+            <script>
+                let myObject = function() {}
+            </script>
+        </article>
+
         <!-- Percabangan -->
         <article class="art" id="percabangan">
             <h2>Percabangan</h2>
@@ -567,7 +684,7 @@
                 <img class="gambar" src="https://img.carapedia.com/images/article/flowchart.jpg" alt="flowchart">
                 <figcaption>Sumber : <a href="https://carapedia.com/flowchart_benar_info747.html" class="web">Contoh Flowchart Yang Benar</a></figcaption>
             </figure>
-            <p>Pada pemrograman Javascript, terdapat <b>6 bentuk percabangan</b> yang harus kita kitahui. <a href="https://www.petanikode.com/javascript-percabangan/" class="web">Petani Kode</a></p>
+            <p>Pada pemrograman Javascript, terdapat <b>6 bentuk percabangan</b> yang harus kita kitahui. <a href="https://www.petanikode.com/javascript-percabangan/" target="_blank" class="web">Petani Kode</a></p>
 
             <!-- Percabangan IF -->
             <h3 id="if" class="mt">1. Percabangan if</h3>
@@ -711,7 +828,7 @@
         <article class="art" id="looping">
             <h2>Perulangan atau Looping</h2>
             <p>Syarat bahasa pemrograman adalah mampu menangani proses-proses secara dinamis, termasuk pada loop atau perulang pada javascript bertujuan untuk mengulangi instruksi hingga pada kondisi tertentu terpenuhi maka perulangan berhenti.</p>
-            <p>Sebagai contoh kita ingin menampilkan angka 1 sampai 100, betapa melelahkan jika kita harus mengetik manual angka 1 sampai 100. Disinilah perulangan dapat mempersingkat waktu penulisan angka-angka tersebut. <a class="web" href="https://bahasaweb.com/belajar-loop-atau-perulangan-pada-javascript/">Bahasaweb</a></p>
+            <p>Sebagai contoh kita ingin menampilkan angka 1 sampai 100, betapa melelahkan jika kita harus mengetik manual angka 1 sampai 100. Disinilah perulangan dapat mempersingkat waktu penulisan angka-angka tersebut. <a class="web" href="https://bahasaweb.com/belajar-loop-atau-perulangan-pada-javascript/" target="_blank">Bahasaweb</a></p>
             <p>Misalnya juga anda masih sekolah dan anda terkena hukuman karena terlambat masuk kelas, lalu guru anda memberikan hukuman dengan menulis "saya berjanji tidak akan mengulanginya lagi" sebanyak 100 kali, pasti capek dan membuat tangan anda pegal, kecuali kalo memang situ hobi menulis. Nah, di javascript ini ada yang namanya <span class="italic">Perulangan</span></p>
             <p>Secara umum ada 5 jenis perulangan namun dibagi menjadi 2 bagian yaitu, <span class="italic">Counted Loop</span> dan <span class="italic">Uncounted Loop</span>:</p>
             <p>Apa perbedaannya?</p>
