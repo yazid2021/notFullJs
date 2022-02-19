@@ -35,7 +35,7 @@
                 <li><a class="active" target="_top" href="#operatorUnary">Operator Unary</a></li>
                 <li><a class="active" target="_top" href="#operatorPerbandingan">Operator Perbandingan</a></li>
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
-                <li><a class="active" target="_top" href="#konversi"><span class="green">Konversi Number-String</span></a></li>
+                <li><a class="active" target="_top" href="#konversi"><span class="green">Konversi Tipe Data</span></a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
                 <li><a class="active" target="_top" href="#array">Array</a></li>
                 <li><a class="active" target="_top" href="#object">Object</a></li>
@@ -332,7 +332,7 @@
 
         <!-- Konversi string ke number maupun sebaliknya -->
         <article class="art" id="konversi">
-            <h2>Konversi String dan Number</h2>
+            <h2>Konversi Tipe Data</h2>
             <p><a class="web" target="_blank" href="https://educhannel.id/blog/artikel/konversi-tipe-data-dalam-javascript.html">Educhannel</a>. Dalam membuat sebuah aplikasi adakalanya kita harus mengkonversi suatu tipe data menjadi tipe data lainnya, sebagai contoh kita harus mengkonversi data dari string ke number. Dalam pengelolaan aritmatika pada javascript suatu tipe data akan secara otomastis dikonversi sesuai operator yang digunakan. Tipe data string akan terkonversi menjadi number jika dikenakan dengan operasi pembagian, perkalian dan pengurangan dengan tipe data operator number, sendangkan untuk operasi penjumlahan javascript tidak dapat melakukan konversi secara otomasi.</p>
             <ul>
                 <li>Saat membuat aplikasi, kadang kita input dari pengguna selalu dalam bentuk String</li>
@@ -362,6 +362,18 @@
                     <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari Number ke String</td>
                 </tr>
             </table>
+            <h3 class="mt">A. Konversi dari String ke Number:</h3>
+            <p>Disini saya menggunakan cara penjumlahan pada hal ini.</p>
+            <h4>1. Menggunakan <span class="green">parseInt</span></h4>
+            <p>Metode ini mengkonversi dari String ke Number dengan hasil bilangan bulat, bukan bilangan pecahan. Jika menggunakan bilangan pecahan tidak akan berhasil menggunakan metode ini. Berikut contoh kodenya:</p>
+            <script src="https://gist.github.com/yazid2021/b8d69d3b6a11ec45e03f559315092057.js"></script>
+            <p>Output:</p>
+            <script>
+                const value1 = parseInt("1");
+                const value2 = 1;
+                const total = value1 + value2;
+                document.write(`<code>${total}</code>`);
+            </script>            
         </article>
 
         <!-- Function -->
