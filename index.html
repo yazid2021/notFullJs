@@ -35,7 +35,7 @@
                 <li><a class="active" target="_top" href="#operatorUnary">Operator Unary</a></li>
                 <li><a class="active" target="_top" href="#operatorPerbandingan">Operator Perbandingan</a></li>
                 <li><a class="active" target="_top" href="#operatorBitwise">Operator Bitwise</a></li>
-                <li><a class="active" target="_top" href="#konversi"><span class="green">Konversi Tipe Data</span></a></li>
+                <li><a class="active" target="_top" href="#konversi">Konversi Tipe Data</a></li>
                 <li><a class="active" target="_top" href="#function">Function</a></li>
                 <li><a class="active" target="_top" href="#array">Array</a></li>
                 <li><a class="active" target="_top" href="#object">Object</a></li>
@@ -358,14 +358,15 @@
                     <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari String ke Number (bilangan pecahan atau bilangan bulat)</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">number.toString()</td>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">String(variabel)</td>
                     <td style="text-align: center; padding: 10px; font-size: 15px;">Mengkonversi dari Number ke String</td>
                 </tr>
             </table>
-            <h3 class="mt">A. Konversi dari String ke Number:</h3>
+            <!-- String to Number -->
+            <h3 class="mt">A. Konversi dari String ke Number</h3>
             <p>Disini saya menggunakan cara penjumlahan pada hal ini.</p>
-            <h4>1. Menggunakan <span class="green">parseInt</span></h4>
-            <p>Metode ini mengkonversi dari String ke Number dengan hasil bilangan bulat, bukan bilangan pecahan. Jika menggunakan bilangan pecahan tidak akan berhasil menggunakan metode ini. Berikut contoh kodenya:</p>
+            <h4 class="mt">1. Menggunakan <span class="green">parseInt</span></h4>
+            <p>Metode ini mengkonversi dari String menjadi Number dengan hasil bilangan bulat, bukan bilangan pecahan. Jika menggunakan bilangan pecahan tidak akan berhasil menggunakan metode ini. Berikut contoh kodenya:</p>
             <script src="https://gist.github.com/yazid2021/b8d69d3b6a11ec45e03f559315092057.js"></script>
             <p>Output:</p>
             <script>
@@ -373,7 +374,51 @@
                 const value2 = 1;
                 const total = value1 + value2;
                 document.write(`<code>${total}</code>`);
-            </script>            
+            </script>        
+            <h4 class="mt">2. Menggunakan <span class="green">parseFloat</span></h4>    
+            <p>Metode ini mengkonversi dari String menjadi Number dengan hasil bilangan pecahan, bukan bilangan bulat. Berikut contoh kodenya:</p>
+            <script src="https://gist.github.com/yazid2021/87c45b790ac6ba7e93d2921ec71b2e93.js"></script>
+            <p>Output:</p>
+            <script>
+                const float1 = parseFloat("1.8");
+                const float2 = 1.4;
+                const totalFloat = float1 + float2;
+                document.write(`<code>${totalFloat}</code>`)
+            </script>
+            <h4 class="mt">3. Menggunakan <span class="green">Number</span></h4>
+            <p>Metode ini mengkonversi dari String menjadi Number dengan hasil bilangan pecahan maupun bulat (semua bisa). Berikut contoh kodenya:</p>
+            <p>Menggunakan bilangan pecahan:</p>
+            <script src="https://gist.github.com/yazid2021/3016585043d47d3ae7346d40d36d2c1a.js"></script>
+            <p>Output:</p>
+            <script>
+                const numberFloat1 = Number("2.2");
+                const numberFloat2 = 5.3;
+                const totalNumberFloat = numberFloat1 + numberFloat2;
+                document.write(`<code>${totalNumberFloat}</code>`);
+            </script>
+            <p>Menggunakan bilangan bulat</p>
+            <script src="https://gist.github.com/yazid2021/43c8ec6687397ba2fd5ceecde784417d.js"></script>
+            <p>Output:</p>
+            <script>
+                const numberInt1 = Number("3");
+                const numberInt2 = Number("3");
+                const totalNumberInt = numberInt1 + numberInt2;
+                document.write(`<code>${totalNumberInt}</code>`);
+            </script>
+            
+            <!-- Number to String -->
+            <h3 class="mt">B. Konversi dari Number ke String</h3>
+            <p>Disini saya menggunakan cara penjumlahan pada hal ini.</p>
+            <h4 class="mt">1. Menggunakan <span class="green">String</span></h4>
+            <p>Metode ini mengkonversi dari Number ke String. Jika 1 + 1 = 2, maka pada kali ini hasilnya akan menjadi 11</p>
+            <script src="https://gist.github.com/yazid2021/3b0e06cd1c4ddf440ae9ae1345d814d7.js"></script>
+            <p>Output:</p>
+            <script>
+                const numberToString1 = 1;
+                const numberToString2 = 1;
+                const totalToString = String(numberToString1) + String(numberToString2);
+                document.write(`<code>${totalToString}</code>`);
+            </script>
         </article>
 
         <!-- Function -->
@@ -382,7 +427,7 @@
             <p>Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain.</p>
             <p>Bisa diibaratkan kamu membuat kue, namun kue itu ingin dihidangkan pada saat malam hari walaupun kamu membuatnya pagi-pagi buta. Function pada javascript ini juga sama kasusnya seperti kue tadi, kamu membuat program yang terencana lalu mengeksekusinya sesuka hati dimanapun dan kapanpun.</p>
             <p>Fungsi di dalam Javascript adalah sebuah objek, karena memiliki properti dan juga method. Bagi pemula konsep ini cukup membingungkan. <a class="web" href="https://www.petanikode.com/javascript-fungsi/" target="_blank">Petani Kode</a></p>
-            <h3>Ada 2 Cara Membuat Fungsi di Javascript</h3>
+            <h3>Ada 3 Cara Membuat Fungsi di Javascript</h3>
             <p>a. Menggunakan cara biasa <br> b. Meggunakan ekspresi <br> c. Menggunakan tanda panah</p>
             
             <!-- Deklarasi Fungsi -->
