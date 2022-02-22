@@ -700,15 +700,32 @@
             <h2>Introspeksi</h2>
             <p>Introspeksi adalah proses pengecekan sebuah objek yang kita lakukan ketika kita ingin mengetahui apa tipe data sebuah <a href="#object" class="miring">object</a> dan apa saja <a href="#variabel" class="miring">variabel</a> dan <a href="#function" class="miring">function</a> yang ada di dalamnya. <a href="https://masputih.com/2013/01/ebook-gratis-mengenal-javascript" class="web" target="_blank">Masputih</a></p>
             <p>JavaScript memiliki tiga <span class="italic">built-in function </span> untuk melakukan introspeksi yaitu:</p>
-            <ul>
-                <li><span class="green">typeof</span> : Operator yang bisa kita gunakan untuk melihat tipe data dari sebuah value atau variabel.</li>
+            <!-- <ul>
+                <li><span class="green">typeof</span> : Operator yang bisa kita gunakan untuk melihat tipe data dari sebuah value atau variabel</li>
                 <li><span class="green">instanceof</span> : Untuk mengecek apakah sebuah data merupakan instance (objek) dari sebuah kelas</li>
-                <li><span class="green">hasOwnProperty</span> : Untuk mengecek apakah sebuah objek memiliki properti (key), akan dikembalikan bertipe <span class="italic">boolean</span></li>
-            </ul>
+                <li><span class="green">in</span> : Untuk mengecek apakah sebuah objek memiliki properti (key), akan dikembalikan bertipe <span class="italic">boolean</span></li>
+            </ul> -->
+            <table border="1">
+                <tr>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Sintaks</th>
+                    <th style="text-align: center; padding: 5px 50px; font-size: 16px; background-color: #eee;">Keterangan</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; border-bottom: 1px; padding: 10px; font-size: 15px; color: #ec5454; font-weight: 600; font-family: monospace;">typeof</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Operator yang bisa kita gunakan untuk melihat tipe data dari sebuah value atau variabel</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">instanceof</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Untuk mengecek apakah sebuah data merupakan instance (objek) dari sebuah kelas</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 10px; color: #ec5454; font-size: 15px; font-weight: 600; font-family: monospace;">in</td>
+                    <td style="text-align: center; padding: 10px; font-size: 15px;">Untuk mengecek apakah sebuah objek memiliki properti (key), akan dikembalikan bertipe <span class="italic">boolean</span></td>
+                </tr>
+            </table>
             <p>Contoh dari <span class="green">typeof</span>: </p>
             <!-- gist -->
             <script src="https://gist.github.com/yazid2021/fda5acc2b2d61c7e47577dcfeae57985.js"></script>
-            <p>Output:</p>
             <script>
                 let a = 1;
                 let b = "satu";
@@ -724,8 +741,6 @@
                 console.log(typeof c); // boolean
                 console.log(typeof d); // object
                 console.log(typeof e); // function
-
-                document.writeln('<p><code>' + typeof a + '</code></p>');
             </script>
             <p>Contoh dari <span class="green">instanceof</span> :</p>
             <script>

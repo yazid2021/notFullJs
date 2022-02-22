@@ -186,12 +186,11 @@ span.green {
 
 
 #sidebar a:hover {
-    /* color: white; */
     background: linear-gradient(to right, #c9d6ffc7, #e2e2e28c); /* biru muda */
-    /* background: linear-gradient(to right, #e0eafc, #cfdef3); */
-    /* background: linear-gradient(to right, #dae2f800, #d6a4a4); */ /* putih ungu */
-    /* width: 94%; */
-    /* width: auto; */
+}
+
+#sidebar li:last-child {
+    border-bottom: none;
 }
 
 .flex {
